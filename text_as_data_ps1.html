@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Ma Adelle Gia Arbo" />
+
+<meta name="date" content="2022-10-14" />
+
+<title>Text as Data Problem Set 1</title>
+
+<script src="text_as_data_ps1_files/header-attrs-2.13/header-attrs.js"></script>
+<script src="text_as_data_ps1_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="text_as_data_ps1_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="text_as_data_ps1_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="text_as_data_ps1_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="text_as_data_ps1_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="text_as_data_ps1_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="text_as_data_ps1_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="text_as_data_ps1_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="text_as_data_ps1_files/navigation-1.1/tabsets.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Text as Data Problem Set 1</h1>
+<h4 class="author">Ma Adelle Gia Arbo</h4>
+<h4 class="date">14 October 2022</h4>
+
+</div>
+
+
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<p><br></p>
+<hr />
+<div id="i.-getting-and-parsing-texts" class="section level1">
+<h1>I. Getting and parsing texts</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># loading packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;pacman&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;pacman&quot;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(quanteda, tidyr, purrr, ggplot2, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>               tidytext, httr, rvest, readr, xml2,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>               stringr, stringi, dplyr, tibble, lexicon)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_file</span>(<span class="st">&quot;pg1934.txt&quot;</span>) </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pg1934 <span class="ot">&lt;-</span> <span class="fu">str_split</span>(p, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)[[<span class="dv">1</span>]]</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># table of contents</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>soi_lines <span class="ot">&lt;-</span> <span class="fu">str_which</span>(pg1934, <span class="at">pattern =</span> <span class="fu">fixed</span>(<span class="st">&quot;SONGS OF INNOCENCE&quot;</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>soe_lines <span class="ot">&lt;-</span> <span class="fu">str_which</span>(pg1934, <span class="at">pattern =</span> <span class="fu">fixed</span>(<span class="st">&quot;SONGS OF EXPERIENCE&quot;</span>))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>toc_soi <span class="ot">&lt;-</span> pg1934[(soi_lines[<span class="dv">3</span>]<span class="sc">+</span><span class="dv">1</span>)<span class="sc">:</span>(soe_lines[<span class="dv">1</span>]<span class="sc">-</span><span class="dv">1</span>)] <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>            <span class="fu">str_subset</span>(<span class="st">&quot;.+&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            <span class="fu">str_trim</span>()</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>toc_soe <span class="ot">&lt;-</span> pg1934[(soe_lines[<span class="dv">1</span>]<span class="sc">+</span><span class="dv">1</span>)<span class="sc">:</span>(soi_lines[<span class="dv">4</span>]<span class="sc">-</span><span class="dv">1</span>)] <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            <span class="fu">str_subset</span>(<span class="st">&quot;.+&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>            <span class="fu">str_trim</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            <span class="fu">str_replace</span>(<span class="st">&quot;My Pretty Rose-Tree&quot;</span>, <span class="st">&quot;My Pretty Rose Tree&quot;</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>toc <span class="ot">&lt;-</span> <span class="fu">append</span>(toc_soi, toc_soe)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>toc</span></code></pre></div>
+<pre><code> [1] &quot;Introduction&quot;                  &quot;The Shepherd&quot;                 
+ [3] &quot;The Echoing Green&quot;             &quot;The Lamb&quot;                     
+ [5] &quot;The Little Black Boy&quot;          &quot;The Blossom&quot;                  
+ [7] &quot;The Chimney-Sweeper&quot;           &quot;The Little Boy Lost&quot;          
+ [9] &quot;The Little Boy Found&quot;          &quot;Laughing Song&quot;                
+[11] &quot;A Cradle Song&quot;                 &quot;The Divine Image&quot;             
+[13] &quot;Holy Thursday&quot;                 &quot;Night&quot;                        
+[15] &quot;Spring&quot;                        &quot;Nurse’s Song&quot;                 
+[17] &quot;Infant Joy&quot;                    &quot;A Dream&quot;                      
+[19] &quot;On Another’s Sorrow&quot;           &quot;Introduction&quot;                 
+[21] &quot;Earth’s Answer&quot;                &quot;The Clod and the Pebble&quot;      
+[23] &quot;Holy Thursday&quot;                 &quot;The Little Girl Lost&quot;         
+[25] &quot;The Little Girl Found&quot;         &quot;The Chimney-Sweeper&quot;          
+[27] &quot;Nurse’s Song&quot;                  &quot;The Sick Rose&quot;                
+[29] &quot;The Fly&quot;                       &quot;The Angel&quot;                    
+[31] &quot;The Tiger&quot;                     &quot;My Pretty Rose Tree&quot;          
+[33] &quot;Ah, Sunflower&quot;                 &quot;The Lily&quot;                     
+[35] &quot;The Garden of Love&quot;            &quot;The Little Vagabond&quot;          
+[37] &quot;London&quot;                        &quot;The Human Abstract&quot;           
+[39] &quot;Infant Sorrow&quot;                 &quot;A Poison Tree&quot;                
+[41] &quot;A Little Boy Lost&quot;             &quot;A Little Girl Lost&quot;           
+[43] &quot;A Divine Image&quot;                &quot;A Cradle Song&quot;                
+[45] &quot;To Tirzah&quot;                     &quot;The Schoolboy&quot;                
+[47] &quot;The Voice of the Ancient Bard&quot;</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># main body</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>start <span class="ot">&lt;-</span> soi_lines[<span class="dv">4</span>]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>end <span class="ot">&lt;-</span>  <span class="fu">str_which</span>(pg1934, <span class="at">pattern =</span> <span class="fu">fixed</span>(<span class="st">&quot;*** END OF THE PROJECT GUTENBERG EBOOK SONGS OF INNOCENCE AND OF EXPERIENCE ***&quot;</span>))</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>body <span class="ot">&lt;-</span> pg1934[(start)<span class="sc">:</span>(end<span class="dv">-1</span>)] <span class="co">#%&gt;%</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>          <span class="co">#stri_remove_empty() %&gt;%</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>          <span class="co">#str_subset(&quot;.+&quot;) %&gt;%</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>          <span class="do">##str_trim()</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>body <span class="ot">&lt;-</span> <span class="fu">append</span>(body, <span class="st">&quot;&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_replace</span>(<span class="st">&quot;SONGS OF EXPERIENCE&quot;</span>, <span class="st">&quot;&quot;</span>) </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(body, <span class="dv">33</span>)</span></code></pre></div>
+<pre><code> [1] &quot;SONGS OF INNOCENCE\r&quot;                 
+ [2] &quot;\r&quot;                                   
+ [3] &quot;\r&quot;                                   
+ [4] &quot;\r&quot;                                   
+ [5] &quot;\r&quot;                                   
+ [6] &quot;INTRODUCTION\r&quot;                       
+ [7] &quot;\r&quot;                                   
+ [8] &quot;\r&quot;                                   
+ [9] &quot;Piping down the valleys wild,\r&quot;      
+[10] &quot;    Piping songs of pleasant glee,\r&quot; 
+[11] &quot;On a cloud I saw a child,\r&quot;          
+[12] &quot;    And he laughing said to me:\r&quot;    
+[13] &quot;\r&quot;                                   
+[14] &quot;‘Pipe a song about a Lamb!’\r&quot;        
+[15] &quot;    So I piped with merry cheer.\r&quot;   
+[16] &quot;‘Piper, pipe that song again.’\r&quot;     
+[17] &quot;    So I piped: he wept to hear.\r&quot;   
+[18] &quot;\r&quot;                                   
+[19] &quot;‘Drop thy pipe, thy happy pipe;\r&quot;    
+[20] &quot;    Sing thy songs of happy cheer!’\r&quot;
+[21] &quot;So I sung the same again,\r&quot;          
+[22] &quot;    While he wept with joy to hear.\r&quot;
+[23] &quot;\r&quot;                                   
+[24] &quot;‘Piper, sit thee down and write\r&quot;    
+[25] &quot;    In a book, that all may read.’\r&quot; 
+[26] &quot;So he vanished from my sight;\r&quot;      
+[27] &quot;    And I plucked a hollow reed,\r&quot;   
+[28] &quot;\r&quot;                                   
+[29] &quot;And I made a rural pen,\r&quot;            
+[30] &quot;    And I stained the water clear,\r&quot; 
+[31] &quot;And I wrote my happy songs\r&quot;         
+[32] &quot;    Every child may joy to hear.\r&quot;   
+[33] &quot;\r&quot;                                   </code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># index of poem titles</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>index <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(toc)) {</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  index[[i]] <span class="ot">&lt;-</span> <span class="fu">str_which</span>(body, <span class="at">pattern =</span> <span class="fu">toupper</span>(toc[i]))</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>index<span class="ot">&lt;-</span> <span class="fu">unlist</span>(index) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">unique</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sort</span>(<span class="at">decreasing =</span> F)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>index <span class="ot">&lt;-</span> <span class="fu">append</span>(index, <span class="fu">length</span>(body))</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>index</span></code></pre></div>
+<pre><code> [1]    6   37   53   92  121  162  182  218  234  250  271  317  348  369  429
+[16]  465  491  511  542  598  628  664  685  711  782  853  874  890  906  937
+[31]  963  999 1015 1031 1042 1063 1089 1115 1151 1167 1193 1229 1276 1292 1318
+[46] 1344 1386 1404</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># extract each poem</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>poems <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(toc)) {</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  poems[[i]] <span class="ot">&lt;-</span> body[((index[i]<span class="sc">+</span><span class="dv">3</span>)<span class="sc">:</span>(index[i<span class="sc">+</span><span class="dv">1</span>]<span class="sc">-</span><span class="dv">5</span>))]</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(poems, <span class="dv">1</span>)</span></code></pre></div>
+<pre><code>[[1]]
+ [1] &quot;Piping down the valleys wild,\r&quot;      
+ [2] &quot;    Piping songs of pleasant glee,\r&quot; 
+ [3] &quot;On a cloud I saw a child,\r&quot;          
+ [4] &quot;    And he laughing said to me:\r&quot;    
+ [5] &quot;\r&quot;                                   
+ [6] &quot;‘Pipe a song about a Lamb!’\r&quot;        
+ [7] &quot;    So I piped with merry cheer.\r&quot;   
+ [8] &quot;‘Piper, pipe that song again.’\r&quot;     
+ [9] &quot;    So I piped: he wept to hear.\r&quot;   
+[10] &quot;\r&quot;                                   
+[11] &quot;‘Drop thy pipe, thy happy pipe;\r&quot;    
+[12] &quot;    Sing thy songs of happy cheer!’\r&quot;
+[13] &quot;So I sung the same again,\r&quot;          
+[14] &quot;    While he wept with joy to hear.\r&quot;
+[15] &quot;\r&quot;                                   
+[16] &quot;‘Piper, sit thee down and write\r&quot;    
+[17] &quot;    In a book, that all may read.’\r&quot; 
+[18] &quot;So he vanished from my sight;\r&quot;      
+[19] &quot;    And I plucked a hollow reed,\r&quot;   
+[20] &quot;\r&quot;                                   
+[21] &quot;And I made a rural pen,\r&quot;            
+[22] &quot;    And I stained the water clear,\r&quot; 
+[23] &quot;And I wrote my happy songs\r&quot;         
+[24] &quot;    Every child may joy to hear.\r&quot;   </code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># extract stanzas of each poem</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>stanzas <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(poems)) {</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  stanza<span class="ot">=</span><span class="fu">str_c</span>(poems[[i]], <span class="at">collapse=</span><span class="st">&quot;</span><span class="sc">\r</span><span class="st">&quot;</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  stanzas[i] <span class="ot">=</span> <span class="fu">str_split</span>(stanza, <span class="st">&quot;</span><span class="sc">\r\r\r\r</span><span class="st">&quot;</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(stanzas, <span class="dv">2</span>)</span></code></pre></div>
+<pre><code>[[1]]
+[1] &quot;Piping down the valleys wild,\r\r    Piping songs of pleasant glee,\r\rOn a cloud I saw a child,\r\r    And he laughing said to me:&quot;       
+[2] &quot;‘Pipe a song about a Lamb!’\r\r    So I piped with merry cheer.\r\r‘Piper, pipe that song again.’\r\r    So I piped: he wept to hear.&quot;     
+[3] &quot;‘Drop thy pipe, thy happy pipe;\r\r    Sing thy songs of happy cheer!’\r\rSo I sung the same again,\r\r    While he wept with joy to hear.&quot;
+[4] &quot;‘Piper, sit thee down and write\r\r    In a book, that all may read.’\r\rSo he vanished from my sight;\r\r    And I plucked a hollow reed,&quot;
+[5] &quot;And I made a rural pen,\r\r    And I stained the water clear,\r\rAnd I wrote my happy songs\r\r    Every child may joy to hear.\r&quot;         
+
+[[2]]
+[1] &quot;How sweet is the shepherd’s sweet lot!\r\rFrom the morn to the evening he strays;\r\rHe shall follow his sheep all the day,\r\rAnd his tongue shall be fillèd with praise.&quot;
+[2] &quot;For he hears the lambs’ innocent call,\r\rAnd he hears the ewes’ tender reply;\r\rHe is watchful while they are in peace,\r\rFor they know when their shepherd is nigh.\r&quot; </code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compile data</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># convert toc list to df</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>toc_df <span class="ot">&lt;-</span> <span class="fu">enframe</span>(toc) <span class="sc">%&gt;%</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>          <span class="fu">mutate</span>(<span class="at">book_title =</span> <span class="fu">ifelse</span>(name<span class="sc">&lt;=</span><span class="dv">19</span>, <span class="st">&quot;Songs of Innocence&quot;</span>, <span class="st">&quot;Songs of Experiences&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>          <span class="fu">rename</span>(<span class="at">poem_title =</span> value, <span class="at">poem_number =</span> name)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># convert stanzas list to df</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>stanzas_df <span class="ot">&lt;-</span> <span class="fu">enframe</span>(stanzas) <span class="sc">%&gt;%</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>              <span class="fu">rename</span>(<span class="at">stanza =</span> value) <span class="sc">%&gt;%</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>              <span class="fu">unnest</span>(stanza) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>              <span class="fu">rename</span>(<span class="at">poem_number=</span>name)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="co"># extract lines per stanza</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>lines_df <span class="ot">&lt;-</span> stanzas_df <span class="sc">%&gt;%</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>              <span class="fu">mutate</span>(<span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(stanzas_df)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>              <span class="fu">group_by</span>(poem_number) <span class="sc">%&gt;%</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>              <span class="fu">mutate</span>(<span class="at">stanza_number =</span> <span class="fu">row_number</span>(id)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>              <span class="fu">mutate</span>(<span class="at">line =</span> <span class="fu">str_split</span>(stanza, <span class="st">&quot;</span><span class="sc">\r\r</span><span class="st">&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>              <span class="fu">unnest</span>(line) <span class="sc">%&gt;%</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>              <span class="fu">subset</span>(<span class="sc">!</span>line <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;</span><span class="sc">\r</span><span class="st">&quot;</span>,<span class="st">&quot;</span><span class="sc">\r\r</span><span class="st">&quot;</span>, <span class="st">&quot;&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># merge data</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">merge</span>(toc_df, lines_df, <span class="at">by =</span> <span class="st">&quot;poem_number&quot;</span>) </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>line <span class="ot">&lt;-</span> <span class="fu">str_trim</span>(df<span class="sc">$</span>line)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>idl <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(lines_df)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(poem_number) <span class="sc">%&gt;%</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">line_number =</span> <span class="fu">row_number</span>(idl)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(stanza,id,idl))</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># save dataset</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df, <span class="dv">10</span>)</span></code></pre></div>
+<div class="kable-table">
+<table>
+<colgroup>
+<col width="11%" />
+<col width="12%" />
+<col width="18%" />
+<col width="13%" />
+<col width="31%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">poem_number</th>
+<th align="left">poem_title</th>
+<th align="left">book_title</th>
+<th align="right">stanza_number</th>
+<th align="left">line</th>
+<th align="right">line_number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">1</td>
+<td align="left">Piping down the valleys wild,</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">1</td>
+<td align="left">Piping songs of pleasant glee,</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">1</td>
+<td align="left">On a cloud I saw a child,</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">1</td>
+<td align="left">And he laughing said to me:</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">2</td>
+<td align="left">‘Pipe a song about a Lamb!’</td>
+<td align="right">5</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">2</td>
+<td align="left">So I piped with merry cheer.</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">2</td>
+<td align="left">‘Piper, pipe that song again.’</td>
+<td align="right">7</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">2</td>
+<td align="left">So I piped: he wept to hear.</td>
+<td align="right">8</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">3</td>
+<td align="left">’Drop thy pipe, thy happy pipe;</td>
+<td align="right">9</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">Introduction</td>
+<td align="left">Songs of Innocence</td>
+<td align="right">3</td>
+<td align="left">Sing thy songs of happy cheer!’</td>
+<td align="right">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ii.-visualising-text-data" class="section level1">
+<h1>II. Visualising text data</h1>
+<ul>
+<li>Create a histogram showing the number of lines per poem</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df_sum <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(book_title, poem_title, poem_number) <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">&#39;drop&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n))</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>df_sum <span class="sc">%&gt;%</span>  </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(poem_title,n), <span class="at">y=</span>n)) <span class="sc">+</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="sc">+</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>book_title) <span class="sc">+</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">&quot;No. of lines&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Poem title&quot;</span>) <span class="sc">+</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div>
+<p><img
+src="text_as_data_ps1_files/figure-html/unnamed-chunk-8-1.png" /><!-- --></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># reorder x values</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># SOI</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df_sum <span class="sc">%&gt;%</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(book_title <span class="sc">==</span> <span class="st">&quot;Songs of Innocence&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(poem_title,n), <span class="at">y=</span>n)) <span class="sc">+</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="sc">+</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">&quot;No. of lines&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Poem title&quot;</span>, <span class="at">title =</span> <span class="st">&quot;Songs of Innocence&quot;</span>) <span class="sc">+</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div>
+<p><img
+src="text_as_data_ps1_files/figure-html/unnamed-chunk-9-1.png" /><!-- --></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SOE</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df_sum <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(book_title <span class="sc">==</span> <span class="st">&quot;Songs of Experiences&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(poem_title,n), <span class="at">y=</span>n)) <span class="sc">+</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="sc">+</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">&quot;No. of lines&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Poem title&quot;</span>, <span class="at">title =</span> <span class="st">&quot;Songs of Experiences&quot;</span>) <span class="sc">+</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div>
+<p><img
+src="text_as_data_ps1_files/figure-html/unnamed-chunk-9-2.png" /><!-- --></p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># save plots</span></span></code></pre></div>
+<ul>
+<li>Create a document feature matrix treating each line as a
+document</li>
+</ul>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>corp <span class="ot">&lt;-</span> <span class="fu">corpus</span>(df<span class="sc">$</span>line)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>dfmat <span class="ot">&lt;-</span> corp <span class="sc">%&gt;%</span> <span class="fu">tokens</span>(<span class="at">remove_punc=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens_remove</span>(<span class="at">pattern=</span><span class="fu">stopwords</span>(<span class="st">&quot;en&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm_trim</span>(<span class="at">min_termfreq=</span><span class="dv">5</span>)</span></code></pre></div>
+<ul>
+<li>Create a separate document feature matrix treating each poem as a
+document</li>
+</ul>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df_poems <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(book_title, poem_title, poem_number) <span class="sc">%&gt;%</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">poem =</span> <span class="fu">str_c</span>(line, <span class="at">collapse=</span><span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>), <span class="at">.groups =</span> <span class="st">&#39;drop&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(poem_number)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>corp_poems <span class="ot">&lt;-</span> <span class="fu">corpus</span>(df_poems<span class="sc">$</span>poem)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>dfmat_poems <span class="ot">&lt;-</span> corp_poems <span class="sc">%&gt;%</span> <span class="fu">tokens</span>(<span class="at">remove_punc=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tokens_remove</span>(<span class="at">pattern=</span><span class="fu">stopwords</span>(<span class="st">&quot;en&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dfm_trim</span>(<span class="at">min_termfreq=</span><span class="dv">5</span>)</span></code></pre></div>
+<ul>
+<li>Using one of these document feature matrices, create a plot that
+compares the frequency of words in each book. Comment on the features
+that are more or less frequent in one book than another.</li>
+</ul>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dfmat_poems</span></code></pre></div>
+<pre><code>Document-feature matrix of: 47 documents, 142 features (86.92% sparse) and 0 docvars.
+       features
+docs    wild pleasant cloud saw child said song lamb merry wept
+  text1    1        1     1   1     2    1    2    1     1    2
+  text2    0        0     0   0     0    0    0    0     0    0
+  text3    0        0     0   0     0    0    0    0     2    0
+  text4    0        0     0   0     2    0    0    8     0    0
+  text5    1        0     3   0     1    0    0    0     0    0
+  text6    0        0     0   0     0    0    0    0     2    0
+[ reached max_ndoc ... 41 more documents, reached max_nfeat ... 132 more features ]</code></pre>
+</div>
+<div id="iii.-parsing-xml-text-data" class="section level1">
+<h1>III. Parsing XML text data</h1>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># parse XML data</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">&quot;https://www.bundestag.de/resource/blob/913074/a5fc2d586c98777a4550bda3f3740d77/20057-data.xml&quot;</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>speeches_xml <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">html_elements</span>(<span class="st">&quot;rede&quot;</span>)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>speeches <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(<span class="fu">do.call</span>(rbind, <span class="fu">html_attrs</span>(speeches_xml)))</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>speeches<span class="sc">$</span>text <span class="ot">&lt;-</span> speeches_xml <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># extract politicians info</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>politicians <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">id =</span> <span class="fu">character</span>(), <span class="at">name=</span><span class="fu">character</span>(), <span class="at">surname=</span><span class="fu">character</span>(), <span class="at">party=</span><span class="fu">character</span>(), <span class="at">role=</span><span class="fu">character</span>())</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(speeches_xml)) {</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  id <span class="ot">=</span> <span class="fu">xml_attr</span>(speeches_xml[i][[<span class="dv">1</span>]], <span class="st">&quot;id&quot;</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  name <span class="ot">=</span> speeches_xml[i][[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> <span class="fu">html_element</span>(<span class="st">&quot;vorname&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  surname <span class="ot">=</span> speeches_xml[i][[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> <span class="fu">html_element</span>(<span class="st">&quot;nachname&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  party <span class="ot">=</span> speeches_xml[i][[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> <span class="fu">html_element</span>(<span class="st">&quot;fraktion&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  role <span class="ot">=</span> speeches_xml[i][[<span class="dv">1</span>]] <span class="sc">%&gt;%</span> <span class="fu">html_element</span>(<span class="st">&quot;rolle&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  politicians <span class="ot">&lt;-</span> politicians <span class="sc">%&gt;%</span> <span class="fu">add_row</span>(<span class="at">id=</span>id, <span class="at">name=</span>name,<span class="at">surname=</span>surname,<span class="at">party=</span>party,<span class="at">role=</span>role)</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># extract speeches only</span></span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  compile data</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>par_speeches <span class="ot">&lt;-</span> <span class="fu">merge</span>(politicians, speeches, <span class="at">by =</span><span class="st">&quot;id&quot;</span>)</span></code></pre></div>
+</div>
+<div id="iv.-using-regular-expressions" class="section level1">
+<h1>IV. Using regular expressions</h1>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

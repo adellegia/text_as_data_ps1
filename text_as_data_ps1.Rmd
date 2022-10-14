@@ -1,0 +1,394 @@
+---
+title: "Text as Data Problem Set 1"
+author: "Ma Adelle Gia Arbo"
+date: "14 October 2022"
+output:
+  html_document:
+    toc: yes
+    keep_md: yes
+    df_print: kable
+    number_sections: no
+    highlight: tango
+    theme: lumen
+    toc_depth: 3
+    toc_float: yes
+    css: custom.css
+    self_contained: no
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+  
+<style>
+div.answer {background-color:#f3f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+```{r, include = F}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      error = FALSE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+```
+
+<br>
+
+***
+
+# I. Getting and parsing texts
+
+
+```{r setup, include = T}
+# loading packages
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(quanteda, tidyr, purrr, ggplot2, 
+               tidytext, httr, rvest, readr, xml2, reshape2,
+               stringr, stringi, dplyr, tibble, lexicon)
+```
+
+First, let's read the text file *pg1934.txt* containing the collection of poems  *Songs of Innocence and of Experience* by William Blake from Project Gutenberg. To make parsing easier in the next steps, I already split the text file wherein one line is one element of the list, *pg1934*.
+```{r data-scrape}
+p <- readr::read_file("pg1934.txt") 
+pg1934 <- str_split(p, "\n")[[1]]
+```
+
+Next, from the list that I created above, I obtained the table of contents to get a list of titles of the 47 poems, 19 of which are from the Songs of Innocence and 28 are from the Songs of Experience .
+```{r toc}
+# table of contents
+soi_lines <- str_which(pg1934, pattern = fixed("SONGS OF INNOCENCE"))
+soe_lines <- str_which(pg1934, pattern = fixed("SONGS OF EXPERIENCE"))
+
+toc_soi <- pg1934[(soi_lines[3]+1):(soe_lines[1]-1)] %>%
+            str_subset(".+") %>%
+            str_trim()
+
+toc_soe <- pg1934[(soe_lines[1]+1):(soi_lines[4]-1)] %>%
+            str_subset(".+") %>%
+            str_trim() %>%
+            str_replace("My Pretty Rose-Tree", "My Pretty Rose Tree")
+
+toc <- append(toc_soi, toc_soe)
+
+toc
+```
+For this part, I extracted the main body of the file containing all of the 47 poems.
+```{r main-body}
+# main body
+start <- soi_lines[4]
+end <-  str_which(pg1934, pattern = fixed("*** END OF THE PROJECT GUTENBERG EBOOK SONGS OF INNOCENCE AND OF EXPERIENCE ***"))
+body <- pg1934[(start):(end-1)] #%>%
+          #stri_remove_empty() %>%
+          #str_subset(".+") %>%
+          ##str_trim()
+body <- append(body, "") %>%
+        str_replace("SONGS OF EXPERIENCE", "") 
+
+head(body, 33)
+```
+Using the main body, I retrieved for the indices where the titles in the tables of contents appear in the body.
+```{r}
+# index of poem titles
+index <- list()
+for (i in 1:length(toc)) {
+  index[[i]] <- str_which(body, pattern = toupper(toc[i]))
+}
+index<- unlist(index) %>% 
+        unique() %>% 
+        sort(decreasing = F)
+index <- append(index, length(body))
+
+index
+```
+With the list of indices, I can now locate the start and end of each of the 47 poems using a specific pattern, as seen in the code below. Then, I saved each poem and appended it into a list. 
+```{r}
+# extract each poem
+poems <- list()
+for (i in 1:length(toc)) {
+  poems[[i]] <- body[((index[i]+3):(index[i+1]-5))]
+}
+
+head(poems, 1)
+```
+Now that I have a list of poems, wherein each poem consists a of list of its lines, I can split this further into stanzas by joining the all lines of the poem then splitting it based on a specific pattern, as coded below.
+```{r}
+# extract stanzas of each poem
+stanzas <- list()
+for (i in 1:length(poems)) {
+  stanza=str_c(poems[[i]], collapse="\r")
+  stanzas[i] = str_split(stanza, "\r\r\r\r")
+}
+
+head(stanzas, 2)
+```
+
+I tidied the list of table of contents into a dataframe (toc_df) and created columns book_title, poem_title, and the poem id that is poem_number. I also tidied the list of stanzas into a dataframe (stanzas_df) from which I can extract the lines of each stanza per poem. In this way, I can create a dataframe with rows as lines of each poem, and it is easier to create the stanza number of each poem using group_by.
+```{r}
+# convert toc list to df
+toc_df <- enframe(toc) %>%
+          mutate(book_title = ifelse(name<=19, "Songs of Innocence", "Songs of Experience")) %>%
+          rename(poem_title = value, poem_number = name)
+
+# convert stanzas list to df
+stanzas_df <- enframe(stanzas) %>%
+              rename(stanza = value) %>%
+              unnest(stanza) %>% 
+              rename(poem_number=name)
+
+# extract lines per stanza
+lines_df <- stanzas_df %>%
+              mutate(id = 1:nrow(stanzas_df)) %>%
+              group_by(poem_number) %>%
+              mutate(stanza_number = row_number(id)) %>%
+              mutate(line = str_split(stanza, "\r\r")) %>%
+              unnest(line) %>%
+              subset(!line %in% c("\r","\r\r", ""))
+
+```
+
+Finally, I merged toc_df and lines_df to create the clean dataset with columns:
+
+- poem_number
+- poem_title
+- stanza_number
+- line
+- line_number
+
+I also saved the final dataframe into a csv format.
+```{r}
+# merge data
+df <- merge(toc_df, lines_df, by = "poem_number") 
+df$line <- str_trim(df$line)
+df$idl <- 1:nrow(lines_df)
+
+df <- df %>%
+  group_by(poem_number) %>%
+  mutate(line_number = row_number(idl)) %>%
+  ungroup() %>%
+  select(-c(stanza,id,idl))
+
+# save dataset
+write.csv(df, "./data/tidy/Songs_of_Innocence_Experience.csv")
+```
+
+```{r}
+head(df, 10)
+```
+
+# II. Visualising text data
+
+## Create a histogram showing the number of lines per poem
+
+I first summarized the data to visualize the histogram and the bar plots.
+```{r}
+df_sum <- df %>%
+  group_by(book_title, poem_title, poem_number) %>%
+  summarise(n = n(), .groups = 'drop') %>%
+  arrange(desc(n))
+```
+
+Below is the histogram showing the distribution of the number of lines across the 47 poems. It looks like most of the poems consists of 15-20 lines. I also saved all plots into a folder.
+```{r}
+hist(df_sum$n, col="gray", main="Histogram of No. of Lines", 
+     xlab="No. of lines", ylab="No. of poems", ylim=c(0, 15))
+```
+
+```{r}
+png("./plots/histogram.png")
+hist(df_sum$n, col="gray", main="Histogram of No. of Lines", 
+     xlab="No. of lines", ylab="No. of poems", ylim=c(0, 15))
+dev.off()
+```
+```{r}
+df_sum_soi<-df_sum %>% filter(book_title=="Songs of Innocence") %>% select(n)
+hist(df_sum_soi$n,col="gray", main="Histogram of No. of Lines (SOI)", 
+     xlab="No. of lines", ylab="No. of poems", ylim=c(0, 15))
+```
+
+```{r}
+df_sum_soe<-df_sum %>% filter(book_title=="Songs of Experience") %>% select(n)
+hist(df_sum_soe$n,col="gray", main="Histogram of No. of Lines (SOE)", 
+     xlab="No. of lines", ylab="No. of poems", ylim=c(0, 15))
+```
+
+```{r}
+df %>% group_by(book_title) %>%
+  summarise(n())
+```
+
+To further investigate this, let's plot a bar graph showing the number of lines per poem for each book. It is found that The Little Girl Lost and The Little Girl Found from the Songs of Experience are the outliers from the histogram with more than 50 lines, and Night from the Songs of Innocence with more than 45 lines.
+```{r}  
+plot_soi_soe <- df_sum %>%  
+  ggplot(aes(x=reorder(poem_title,n), y=n)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  facet_wrap(~book_title) +
+  labs(y = "No. of lines", x = "Poem title") +
+  theme_bw()
+plot_soi_soe
+ggsave("./plots/plot_soi_soe.png")
+```
+
+```{r}
+# reorder x values
+# SOI
+plot_soi <- df_sum %>%
+  filter(book_title == "Songs of Innocence") %>%
+  ggplot(aes(x=reorder(poem_title,n), y=n)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(y = "No. of lines", x = "Poem title", title = "Songs of Innocence") +
+  theme_bw()
+plot_soi
+ggsave("./plots/plot_soi.png")
+```
+
+```{r}
+# SOE
+plot_soe <- df_sum %>%
+  filter(book_title == "Songs of Experience") %>%
+  ggplot(aes(x=reorder(poem_title,n), y=n)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(y = "No. of lines", x = "Poem title", title = "Songs of Experience") +
+  theme_bw()
+plot_soe
+ggsave("./plots/plot_soe.png")
+```
+
+
+## Create a document feature matrix (dfm) treating each line as a document
+
+To create a document feature matrix treating each line as a document, I first created a corpus using of lines. From there, I extracted each word (one gram) of the lines as tokens, removed punctuations, and English stopwords. This led to 1168 features from the 909 documents with 99.73% sparse rate.
+
+```{r}
+corp <- corpus(df$line)
+dfmat_lines <- corp %>% tokens(remove_punc=TRUE) %>%
+  tokens_remove(pattern=stopwords("en")) %>%
+  dfm()
+# %>%  dfm_trim(min_termfreq=20)
+#  %>% dfm_tfidf() # we can also get the tfidf instead of count
+
+dfmat_lines
+```
+
+- Create a separate document feature matrix treating each poem as a document
+
+I first joined the lines of each poem so that each row will contain a poem. After that, the same is done above here to get the dfm with each poem as a document. Here, I did not trim anymore, and it gave 1168 features from the 47 documents with 95.85% sparse rate.
+```{r}
+df_poems <- df %>%
+  group_by(book_title, poem_title, poem_number) %>%
+  summarise(poem = str_c(line, collapse="\n"), .groups = 'drop') %>%
+  arrange(poem_number)
+
+corp_poems <- corpus(df_poems$poem)
+dfmat_poems <- corp_poems %>% tokens(remove_punc=TRUE) %>%
+  tokens_remove(pattern=stopwords("en")) %>%
+  dfm()
+#  dfm_trim(min_termfreq=20)
+#  %>% dfm_tfidf()
+
+dfmat_poems
+```
+
+- Using one of these document feature matrices, create a plot that compares the frequency of words in each book. Comment on the features that are more or less frequent in one book than another.
+
+For easier and cleaner visualization, I used dfmat_poems into a dfm with min_termfreq of 10 for Songs of Innocence (SOI), which gives me 19 documents with 10 features. For Songs of Experiences (SOE), I used min_termfreq of 8, which gives me 9 features from the 28 documents. (Note: max_termfreq can also be used to trim the dfm if we want to compare the least occuring words in each book.)
+
+Comparing the two plots of document feature matrix, it can be seen that the word "thee", "little", "sweet", and "joy" are more frequently used in the poems of SOI than in SOE. Meanwhile, words like "thy", "night", and "sleep" have more occurrence in SOE than in SOI.
+
+```{r}
+dfmat_soi <- dfmat_poems[1:19,] %>% dfm_trim(min_termfreq=8)
+dfmat_soi
+```
+
+```{r}
+# SOI - 1st to 19th poem
+tidy_dfm_soi <- melt(as.matrix(dfmat_soi))
+
+ggplot(tidy_dfm_soi, aes(reorder(features,-value), docs)) + 
+  geom_tile(aes(fill=value), color="black") + 
+  geom_text(aes(label=value)) + 
+  coord_fixed() + 
+  scale_fill_distiller(direction=1, palette="Greys", limits=c(0,12)) + 
+  scale_x_discrete(position="top") + 
+  theme(axis.text.x = element_text(angle=60, vjust=0.5, hjust=0)) +
+  labs(x = "Frequency of Words", 
+       y = "Documents/Poems",
+       title = "Songs of Innocence")
+
+ggsave("./plots/dfmat_soi.png")
+```
+```{r}
+dfmat_soe <- dfmat_poems[20:47,] %>% dfm_trim(min_termfreq=8)
+dfmat_soe
+```
+
+```{r}
+# SOE - 20th to 47th poem
+tidy_dfm_soe <- melt(as.matrix(dfmat_soe))
+
+ggplot(tidy_dfm_soe, aes(reorder(features,-value), docs)) + 
+  geom_tile(aes(fill=value), color="black") + 
+  geom_text(aes(label=value)) + 
+  coord_fixed() + 
+  scale_fill_distiller(direction=1, palette="Greys", limits=c(0,8)) + 
+  scale_x_discrete(position="top") + 
+  theme(axis.text.x = element_text(angle=60, vjust=0.5, hjust=0)) +
+  labs(x = "Frequency of Words", 
+       y = "Documents/Poems",
+       title = "Songs of Experience")
+
+ggsave("./plots/dfmat_soe.png")
+```
+
+# III. Parsing XML text data
+
+```{r}
+# parse XML data
+data <- read_html("https://www.bundestag.de/resource/blob/913074/a5fc2d586c98777a4550bda3f3740d77/20057-data.xml")
+speeches_xml <- data %>% html_elements("rede")
+speeches <- as_tibble(do.call(rbind, html_attrs(speeches_xml)))
+speeches$text <- speeches_xml %>% html_text()
+```
+
+```{r}
+# extract politicians info
+politicians <- tibble(id = character(), name=character(), surname=character(), party=character(), role=character())
+for (i in 1:length(speeches_xml)) {
+  id = xml_attr(speeches_xml[i][[1]], "id")
+  name = speeches_xml[i][[1]] %>% html_element("vorname") %>% html_text()
+  surname = speeches_xml[i][[1]] %>% html_element("nachname") %>% html_text()
+  party = speeches_xml[i][[1]] %>% html_element("fraktion") %>% html_text()
+  role = speeches_xml[i][[1]] %>% html_element("rolle") %>% html_text()
+  
+  politicians <- politicians %>% add_row(id=id, name=name,surname=surname,party=party,role=role)
+}
+
+politicians<-as.data.frame(politicians)
+```
+
+```{r}
+# extract speeches only
+x<-speeches$text[1]
+
+a1<-politicians$name[1]
+a2<-politicians$surname[1]
+a3<-politicians$party[1]
+a4<-politicians$role[1]
+
+speeches$speech <- str_remove(x, a4)
+
+
+```
+
+```{r}
+#  compile data
+par_speeches <- merge(politicians, speeches, by ="id")
+
+```
+
+# IV. Using regular expressions
+
+
+
