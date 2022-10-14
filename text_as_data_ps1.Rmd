@@ -378,20 +378,17 @@ politicians_df <- politicians %>%
 ```
 
 ```{r}
-# extract speeches only
-x<-speeches$text[1]
-
-a1<-politicians[1,]$name
-a2<-politicians[1,]$full_name
-a3<-politicians[1,]$party
-a4<-politicians[1,]$role
-
-y <- str_remove(x, a3)
+# extract speeches only, remove name info in start, remove "(Beifall..."
+speeches_df <- speeches %>%
+  mutate(txt = sub("^[^:]*:", "", text)) %>%
+  select(-text) %>% 
+  mutate(text = str_remove_all(txt, '\\(Beifall.*\\)')) %>%
+  select(-txt)
 ```
 
 ```{r}
 #  compile data
-speeches_df <- merge(politicians_df, speeches, by = "id")
+speeches_df <- merge(politicians_df, speeches_df, by = "id")
 
 # save data
 write.csv(speeches_df, "./data/tidy/session_minutes_290922.csv")
