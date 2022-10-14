@@ -3,6 +3,9 @@ title: "Text as Data Problem Set 1"
 author: "Ma Adelle Gia Arbo"
 date: "14 October 2022"
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     toc: yes
     keep_md: yes
@@ -14,9 +17,6 @@ output:
     toc_float: yes
     css: custom.css
     self_contained: no
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 ---
   
 <style>
@@ -49,7 +49,7 @@ pacman::p_load(quanteda, tidyr, purrr, ggplot2,
 
 First, let's read the text file *pg1934.txt* containing the collection of poems  *Songs of Innocence and of Experience* by William Blake from Project Gutenberg. To make parsing easier in the next steps, I already split the text file wherein one line is one element of the list, *pg1934*.
 ```{r data-scrape}
-p <- readr::read_file("pg1934.txt") 
+p <- readr::read_file("./data/raw/pg1934.txt") 
 pg1934 <- str_split(p, "\n")[[1]]
 ```
 
@@ -293,7 +293,7 @@ dfmat_poems
 
 - Using one of these document feature matrices, create a plot that compares the frequency of words in each book. Comment on the features that are more or less frequent in one book than another.
 
-For easier and cleaner visualization, I used dfmat_poems into a dfm with min_termfreq of 10 for Songs of Innocence (SOI), which gives me 19 documents with 10 features. For Songs of Experiences (SOE), I used min_termfreq of 8, which gives me 9 features from the 28 documents. (Note: max_termfreq can also be used to trim the dfm if we want to compare the least occuring words in each book.)
+For easier and cleaner visualization, I used dfmat_poems into a dfm with min_termfreq of 8 for Songs of Innocence (SOI), which gives me 19 documents with 27 features. For Songs of Experiences (SOE), I also used min_termfreq of 8, which gives me 20 features from the 28 documents. (Note: max_termfreq can also be used to trim the dfm if we want to compare the least occuring words in each book.)
 
 Comparing the two plots of document feature matrix, it can be seen that the word "thee", "little", "sweet", and "joy" are more frequently used in the poems of SOI than in SOE. Meanwhile, words like "thy", "night", and "sleep" have more occurrence in SOE than in SOI.
 
@@ -344,6 +344,8 @@ ggsave("./plots/dfmat_soe.png")
 
 # III. Parsing XML text data
 
+I used the xml data from the Minutes of the 57th meeting on Thursday, 29 September 2022. 
+
 ```{r}
 # parse XML data
 data <- read_html("https://www.bundestag.de/resource/blob/913074/a5fc2d586c98777a4550bda3f3740d77/20057-data.xml")
@@ -354,41 +356,85 @@ speeches$text <- speeches_xml %>% html_text()
 
 ```{r}
 # extract politicians info
-politicians <- tibble(id = character(), name=character(), surname=character(), party=character(), role=character())
+politicians <- tibble(id = character(), name=character(), surname=character(), full_name=character(),
+                      party=character(), role=character())
 for (i in 1:length(speeches_xml)) {
   id = xml_attr(speeches_xml[i][[1]], "id")
   name = speeches_xml[i][[1]] %>% html_element("vorname") %>% html_text()
   surname = speeches_xml[i][[1]] %>% html_element("nachname") %>% html_text()
+  full_name = paste0(name, " ", surname)
   party = speeches_xml[i][[1]] %>% html_element("fraktion") %>% html_text()
   role = speeches_xml[i][[1]] %>% html_element("rolle") %>% html_text()
   
-  politicians <- politicians %>% add_row(id=id, name=name,surname=surname,party=party,role=role)
+  politicians <- politicians %>% add_row(id=id, name=name,surname=surname,
+                                         full_name=full_name,party=party,role=role)
 }
 
-politicians<-as.data.frame(politicians)
+# assuming the full names of the politicians are unique, assign unique id
+politicians_df <- politicians %>% 
+  group_by(full_name) %>% 
+  mutate(pol_id = cur_group_id()) %>% # 167 pol_ids
+  arrange(pol_id, id)
 ```
 
 ```{r}
 # extract speeches only
 x<-speeches$text[1]
 
-a1<-politicians$name[1]
-a2<-politicians$surname[1]
-a3<-politicians$party[1]
-a4<-politicians$role[1]
+a1<-politicians[1,]$name
+a2<-politicians[1,]$full_name
+a3<-politicians[1,]$party
+a4<-politicians[1,]$role
 
-speeches$speech <- str_remove(x, a4)
-
-
+y <- str_remove(x, a3)
 ```
 
 ```{r}
 #  compile data
-par_speeches <- merge(politicians, speeches, by ="id")
+speeches_df <- merge(politicians_df, speeches, by = "id")
 
+# save data
+write.csv(speeches_df, "./data/tidy/session_minutes_290922.csv")
+```
+
+```{r}
+
+print(sprintf("There are %s speeches delivered by %s politicians during the 57th meeting on Thursday, 29 September 2022", nrow(speeches_df), length(unique(speeches_df$pol_id))))
+```
+
+I chose the politician named Alexander Radwan with pol_id == 3. Below, I show the number of speeches and the content of the first speech.
+```{r}
+pol_3 <- speeches_df %>% filter(pol_id==3)
+full_name <- pol_3[1,]$full_name
+
+print(sprintf("%s deliverd %s speeches during the 57th meeting on Thursday, 29 September 2022", pol_3[1,]$full_name, nrow(pol_3)))
+```
+
+Below is the first speech that Alexander Radwan gave:
+```{r}
+writeLines(pol_3[1,]$text)
 ```
 
 # IV. Using regular expressions
 
+```{r}
+speech_id <- str_which(speeches_df$text, pattern="\\w*[Kk]ohle\\w*")
 
+sum_id <- sum(str_detect(speeches_df$text, pattern="\\w*[Kk]ohle\\w*"))
 
+print(sprintf("There are %s speeches that mentioned 'kohle' during the 57th meeting on Thursday, 29 September 2022. Below is the list of the speech ids:", sum_id))
+
+speeches$id[speech_id]
+```
+
+```{r}
+kohle <- unlist(unique((str_extract_all(speeches_df$text, pattern="\\w*[Kk]ohle\\w*"))))
+
+kohle_tab <- as.tibble(table(kohle)) %>% arrange(desc(n))
+
+print(sprintf("There are %s words that contain 'kohle'.", nrow(kohle_tab)))
+
+```
+```{r}
+kohle_tab
+```
