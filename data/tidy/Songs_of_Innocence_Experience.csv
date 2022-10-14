@@ -1,0 +1,910 @@
+"","poem_number","poem_title","book_title","stanza_number","line","line_number"
+"1",1,"Introduction","Songs of Innocence",1,"Piping down the valleys wild,",1
+"2",1,"Introduction","Songs of Innocence",1,"Piping songs of pleasant glee,",2
+"3",1,"Introduction","Songs of Innocence",1,"On a cloud I saw a child,",3
+"4",1,"Introduction","Songs of Innocence",1,"And he laughing said to me:",4
+"5",1,"Introduction","Songs of Innocence",2,"‘Pipe a song about a Lamb!’",5
+"6",1,"Introduction","Songs of Innocence",2,"So I piped with merry cheer.",6
+"7",1,"Introduction","Songs of Innocence",2,"‘Piper, pipe that song again.’",7
+"8",1,"Introduction","Songs of Innocence",2,"So I piped: he wept to hear.",8
+"9",1,"Introduction","Songs of Innocence",3,"‘Drop thy pipe, thy happy pipe;",9
+"10",1,"Introduction","Songs of Innocence",3,"Sing thy songs of happy cheer!’",10
+"11",1,"Introduction","Songs of Innocence",3,"So I sung the same again,",11
+"12",1,"Introduction","Songs of Innocence",3,"While he wept with joy to hear.",12
+"13",1,"Introduction","Songs of Innocence",4,"‘Piper, sit thee down and write",13
+"14",1,"Introduction","Songs of Innocence",4,"In a book, that all may read.’",14
+"15",1,"Introduction","Songs of Innocence",4,"So he vanished from my sight;",15
+"16",1,"Introduction","Songs of Innocence",4,"And I plucked a hollow reed,",16
+"17",1,"Introduction","Songs of Innocence",5,"And I made a rural pen,",17
+"18",1,"Introduction","Songs of Innocence",5,"And I stained the water clear,",18
+"19",1,"Introduction","Songs of Innocence",5,"And I wrote my happy songs",19
+"20",1,"Introduction","Songs of Innocence",5,"Every child may joy to hear.",20
+"21",2,"The Shepherd","Songs of Innocence",1,"How sweet is the shepherd’s sweet lot!",1
+"22",2,"The Shepherd","Songs of Innocence",1,"From the morn to the evening he strays;",2
+"23",2,"The Shepherd","Songs of Innocence",1,"He shall follow his sheep all the day,",3
+"24",2,"The Shepherd","Songs of Innocence",1,"And his tongue shall be fillèd with praise.",4
+"25",2,"The Shepherd","Songs of Innocence",2,"For he hears the lambs’ innocent call,",5
+"26",2,"The Shepherd","Songs of Innocence",2,"And he hears the ewes’ tender reply;",6
+"27",2,"The Shepherd","Songs of Innocence",2,"He is watchful while they are in peace,",7
+"28",2,"The Shepherd","Songs of Innocence",2,"For they know when their shepherd is nigh.",8
+"29",3,"The Echoing Green","Songs of Innocence",1,"The sun does arise,",1
+"30",3,"The Echoing Green","Songs of Innocence",1,"And make happy the skies;",2
+"31",3,"The Echoing Green","Songs of Innocence",1,"The merry bells ring",3
+"32",3,"The Echoing Green","Songs of Innocence",1,"To welcome the Spring;",4
+"33",3,"The Echoing Green","Songs of Innocence",1,"The skylark and thrush,",5
+"34",3,"The Echoing Green","Songs of Innocence",1,"The birds of the bush,",6
+"35",3,"The Echoing Green","Songs of Innocence",1,"Sing louder around",7
+"36",3,"The Echoing Green","Songs of Innocence",1,"To the bells’ cheerful sound;",8
+"37",3,"The Echoing Green","Songs of Innocence",1,"While our sports shall be seen",9
+"38",3,"The Echoing Green","Songs of Innocence",1,"On the echoing green.",10
+"39",3,"The Echoing Green","Songs of Innocence",2,"Old John, with white hair,",11
+"40",3,"The Echoing Green","Songs of Innocence",2,"Does laugh away care,",12
+"41",3,"The Echoing Green","Songs of Innocence",2,"Sitting under the oak,",13
+"42",3,"The Echoing Green","Songs of Innocence",2,"Among the old folk.",14
+"43",3,"The Echoing Green","Songs of Innocence",2,"They laugh at our play,",15
+"44",3,"The Echoing Green","Songs of Innocence",2,"And soon they all say,",16
+"45",3,"The Echoing Green","Songs of Innocence",2,"‘Such, such were the joys",17
+"46",3,"The Echoing Green","Songs of Innocence",2,"When we all—girls and boys—",18
+"47",3,"The Echoing Green","Songs of Innocence",2,"In our youth-time were seen",19
+"48",3,"The Echoing Green","Songs of Innocence",2,"On the echoing green.’",20
+"49",3,"The Echoing Green","Songs of Innocence",3,"Till the little ones, weary,",21
+"50",3,"The Echoing Green","Songs of Innocence",3,"No more can be merry:",22
+"51",3,"The Echoing Green","Songs of Innocence",3,"The sun does descend,",23
+"52",3,"The Echoing Green","Songs of Innocence",3,"And our sports have an end.",24
+"53",3,"The Echoing Green","Songs of Innocence",3,"Round the laps of their mothers",25
+"54",3,"The Echoing Green","Songs of Innocence",3,"Many sisters and brothers,",26
+"55",3,"The Echoing Green","Songs of Innocence",3,"Like birds in their nest,",27
+"56",3,"The Echoing Green","Songs of Innocence",3,"Are ready for rest,",28
+"57",3,"The Echoing Green","Songs of Innocence",3,"And sport no more seen",29
+"58",3,"The Echoing Green","Songs of Innocence",3,"On the darkening green.",30
+"59",4,"The Lamb","Songs of Innocence",1,"Little lamb, who made thee?",1
+"60",4,"The Lamb","Songs of Innocence",1,"Does thou know who made thee,",2
+"61",4,"The Lamb","Songs of Innocence",1,"Gave thee life, and bid thee feed",3
+"62",4,"The Lamb","Songs of Innocence",1,"By the stream and o’er the mead;",4
+"63",4,"The Lamb","Songs of Innocence",1,"Gave thee clothing of delight,",5
+"64",4,"The Lamb","Songs of Innocence",1,"Softest clothing, woolly, bright;",6
+"65",4,"The Lamb","Songs of Innocence",1,"Gave thee such a tender voice,",7
+"66",4,"The Lamb","Songs of Innocence",1,"Making all the vales rejoice?",8
+"67",4,"The Lamb","Songs of Innocence",1,"Little lamb, who made thee?",9
+"68",4,"The Lamb","Songs of Innocence",1,"Does thou know who made thee?",10
+"69",4,"The Lamb","Songs of Innocence",2,"Little lamb, I’ll tell thee;",11
+"70",4,"The Lamb","Songs of Innocence",2,"Little lamb, I’ll tell thee:",12
+"71",4,"The Lamb","Songs of Innocence",2,"He is callèd by thy name,",13
+"72",4,"The Lamb","Songs of Innocence",2,"For He calls Himself a Lamb.",14
+"73",4,"The Lamb","Songs of Innocence",2,"He is meek, and He is mild,",15
+"74",4,"The Lamb","Songs of Innocence",2,"He became a little child.",16
+"75",4,"The Lamb","Songs of Innocence",2,"I a child, and thou a lamb,",17
+"76",4,"The Lamb","Songs of Innocence",2,"We are callèd by His name.",18
+"77",4,"The Lamb","Songs of Innocence",2,"Little lamb, God bless thee!",19
+"78",4,"The Lamb","Songs of Innocence",2,"Little lamb, God bless thee!",20
+"79",5,"The Little Black Boy","Songs of Innocence",1,"My mother bore me in the southern wild,",1
+"80",5,"The Little Black Boy","Songs of Innocence",1,"And I am black, but O my soul is white!",2
+"81",5,"The Little Black Boy","Songs of Innocence",1,"White as an angel is the English child,",3
+"82",5,"The Little Black Boy","Songs of Innocence",1,"But I am black, as if bereaved of light.",4
+"83",5,"The Little Black Boy","Songs of Innocence",2,"My mother taught me underneath a tree,",5
+"84",5,"The Little Black Boy","Songs of Innocence",2,"And, sitting down before the heat of day,",6
+"85",5,"The Little Black Boy","Songs of Innocence",2,"She took me on her lap and kissèd me,",7
+"86",5,"The Little Black Boy","Songs of Innocence",2,"And, pointing to the East, began to say:",8
+"87",5,"The Little Black Boy","Songs of Innocence",3,"‘Look on the rising sun: there God does live,",9
+"88",5,"The Little Black Boy","Songs of Innocence",3,"And gives His light, and gives His heat away,",10
+"89",5,"The Little Black Boy","Songs of Innocence",3,"And flowers and trees and beasts and men receive",11
+"90",5,"The Little Black Boy","Songs of Innocence",3,"Comfort in morning, joy in the noonday.",12
+"91",5,"The Little Black Boy","Songs of Innocence",4,"‘And we are put on earth a little space,",13
+"92",5,"The Little Black Boy","Songs of Innocence",4,"That we may learn to bear the beams of love;",14
+"93",5,"The Little Black Boy","Songs of Innocence",4,"And these black bodies and this sunburnt face",15
+"94",5,"The Little Black Boy","Songs of Innocence",4,"Are but a cloud, and like a shady grove.",16
+"95",5,"The Little Black Boy","Songs of Innocence",5,"‘For, when our souls have learned the heat to bear,",17
+"96",5,"The Little Black Boy","Songs of Innocence",5,"The cloud will vanish, we shall hear His voice,",18
+"97",5,"The Little Black Boy","Songs of Innocence",5,"Saying, “Come out from the grove, my love and care,",19
+"98",5,"The Little Black Boy","Songs of Innocence",5,"And round my golden tent like lambs rejoice.”’",20
+"99",5,"The Little Black Boy","Songs of Innocence",6,"Thus did my mother say, and kissed me,",21
+"100",5,"The Little Black Boy","Songs of Innocence",6,"And thus I say to little English boy.",22
+"101",5,"The Little Black Boy","Songs of Innocence",6,"When I from black, and he from white cloud free,",23
+"102",5,"The Little Black Boy","Songs of Innocence",6,"And round the tent of God like lambs we joy,",24
+"103",5,"The Little Black Boy","Songs of Innocence",7,"I’ll shade him from the heat till he can bear",25
+"104",5,"The Little Black Boy","Songs of Innocence",7,"To lean in joy upon our Father’s knee;",26
+"105",5,"The Little Black Boy","Songs of Innocence",7,"And then I’ll stand and stroke his silver hair,",27
+"106",5,"The Little Black Boy","Songs of Innocence",7,"And be like him, and he will then love me.",28
+"107",6,"The Blossom","Songs of Innocence",1,"Merry, merry sparrow!",1
+"108",6,"The Blossom","Songs of Innocence",1,"Under leaves so green",2
+"109",6,"The Blossom","Songs of Innocence",1,"A happy blossom",3
+"110",6,"The Blossom","Songs of Innocence",1,"Sees you, swift as arrow,",4
+"111",6,"The Blossom","Songs of Innocence",1,"Seek your cradle narrow,",5
+"112",6,"The Blossom","Songs of Innocence",1,"Near my bosom.",6
+"113",6,"The Blossom","Songs of Innocence",2,"Pretty, pretty robin!",7
+"114",6,"The Blossom","Songs of Innocence",2,"Under leaves so green",8
+"115",6,"The Blossom","Songs of Innocence",2,"A happy blossom",9
+"116",6,"The Blossom","Songs of Innocence",2,"Hears you sobbing, sobbing,",10
+"117",6,"The Blossom","Songs of Innocence",2,"Pretty, pretty robin,",11
+"118",6,"The Blossom","Songs of Innocence",2,"Near my bosom.",12
+"119",7,"The Chimney-Sweeper","Songs of Innocence",1,"When my mother died I was very young,",1
+"120",7,"The Chimney-Sweeper","Songs of Innocence",1,"And my father sold me while yet my tongue",2
+"121",7,"The Chimney-Sweeper","Songs of Innocence",1,"Could scarcely cry ‘Weep! weep! weep! weep!’",3
+"122",7,"The Chimney-Sweeper","Songs of Innocence",1,"So your chimneys I sweep, and in soot I sleep.",4
+"123",7,"The Chimney-Sweeper","Songs of Innocence",2,"There’s little Tom Dacre, who cried when his head,",5
+"124",7,"The Chimney-Sweeper","Songs of Innocence",2,"That curled like a lamb’s back, was shaved; so I said,",6
+"125",7,"The Chimney-Sweeper","Songs of Innocence",2,"‘Hush, Tom! never mind it, for, when your head’s bare,",7
+"126",7,"The Chimney-Sweeper","Songs of Innocence",2,"You know that the soot cannot spoil your white hair.’",8
+"127",7,"The Chimney-Sweeper","Songs of Innocence",3,"And so he was quiet, and that very night,",9
+"128",7,"The Chimney-Sweeper","Songs of Innocence",3,"As Tom was a-sleeping, he had such a sight!—",10
+"129",7,"The Chimney-Sweeper","Songs of Innocence",3,"That thousands of sweepers, Dick, Joe, Ned, and Jack,",11
+"130",7,"The Chimney-Sweeper","Songs of Innocence",3,"Were all of them locked up in coffins of black.",12
+"131",7,"The Chimney-Sweeper","Songs of Innocence",4,"And by came an angel, who had a bright key,",13
+"132",7,"The Chimney-Sweeper","Songs of Innocence",4,"And he opened the coffins, and set them all free;",14
+"133",7,"The Chimney-Sweeper","Songs of Innocence",4,"Then down a green plain, leaping, laughing, they run",15
+"134",7,"The Chimney-Sweeper","Songs of Innocence",4,"And wash in a river, and shine in the sun.",16
+"135",7,"The Chimney-Sweeper","Songs of Innocence",5,"Then naked and white, all their bags left behind,",17
+"136",7,"The Chimney-Sweeper","Songs of Innocence",5,"They rise upon clouds, and sport in the wind:",18
+"137",7,"The Chimney-Sweeper","Songs of Innocence",5,"And the angel told Tom, if he’d be a good boy,",19
+"138",7,"The Chimney-Sweeper","Songs of Innocence",5,"He’d have God for his father, and never want joy.",20
+"139",7,"The Chimney-Sweeper","Songs of Innocence",6,"And so Tom awoke, and we rose in the dark,",21
+"140",7,"The Chimney-Sweeper","Songs of Innocence",6,"And got with our bags and our brushes to work.",22
+"141",7,"The Chimney-Sweeper","Songs of Innocence",6,"Though the morning was cold, Tom was happy and warm:",23
+"142",7,"The Chimney-Sweeper","Songs of Innocence",6,"So, if all do their duty, they need not fear harm.",24
+"143",8,"The Little Boy Lost","Songs of Innocence",1,"‘Father, father, where are you going?",1
+"144",8,"The Little Boy Lost","Songs of Innocence",1,"O do not walk so fast!",2
+"145",8,"The Little Boy Lost","Songs of Innocence",1,"Speak, father, speak to your little boy,",3
+"146",8,"The Little Boy Lost","Songs of Innocence",1,"Or else I shall be lost.’",4
+"147",8,"The Little Boy Lost","Songs of Innocence",2,"The night was dark, no father was there,",5
+"148",8,"The Little Boy Lost","Songs of Innocence",2,"The child was wet with dew;",6
+"149",8,"The Little Boy Lost","Songs of Innocence",2,"The mire was deep, and the child did weep,",7
+"150",8,"The Little Boy Lost","Songs of Innocence",2,"And away the vapour flew.",8
+"151",9,"The Little Boy Found","Songs of Innocence",1,"The little boy lost in the lonely fen,",1
+"152",9,"The Little Boy Found","Songs of Innocence",1,"Led by the wandering light,",2
+"153",9,"The Little Boy Found","Songs of Innocence",1,"Began to cry, but God, ever nigh,",3
+"154",9,"The Little Boy Found","Songs of Innocence",1,"Appeared like his father, in white.",4
+"155",9,"The Little Boy Found","Songs of Innocence",2,"He kissed the child, and by the hand led,",5
+"156",9,"The Little Boy Found","Songs of Innocence",2,"And to his mother brought,",6
+"157",9,"The Little Boy Found","Songs of Innocence",2,"Who in sorrow pale, through the lonely dale,",7
+"158",9,"The Little Boy Found","Songs of Innocence",2,"Her little boy weeping sought.",8
+"159",10,"Laughing Song","Songs of Innocence",1,"When the green woods laugh with the voice of joy,",1
+"160",10,"Laughing Song","Songs of Innocence",1,"And the dimpling stream runs laughing by;",2
+"161",10,"Laughing Song","Songs of Innocence",1,"When the air does laugh with our merry wit,",3
+"162",10,"Laughing Song","Songs of Innocence",1,"And the green hill laughs with the noise of it;",4
+"163",10,"Laughing Song","Songs of Innocence",2,"When the meadows laugh with lively green,",5
+"164",10,"Laughing Song","Songs of Innocence",2,"And the grasshopper laughs in the merry scene;",6
+"165",10,"Laughing Song","Songs of Innocence",2,"When Mary and Susan and Emily",7
+"166",10,"Laughing Song","Songs of Innocence",2,"With their sweet round mouths sing ‘Ha ha he!’",8
+"167",10,"Laughing Song","Songs of Innocence",3,"When the painted birds laugh in the shade,",9
+"168",10,"Laughing Song","Songs of Innocence",3,"Where our table with cherries and nuts is spread:",10
+"169",10,"Laughing Song","Songs of Innocence",3,"Come live, and be merry, and join with me,",11
+"170",10,"Laughing Song","Songs of Innocence",3,"To sing the sweet chorus of ‘Ha ha he!’",12
+"171",11,"A Cradle Song","Songs of Innocence",1,"Sweet dreams, form a shade",1
+"172",11,"A Cradle Song","Songs of Innocence",1,"O’er my lovely infant’s head!",2
+"173",11,"A Cradle Song","Songs of Innocence",1,"Sweet dreams of pleasant streams",3
+"174",11,"A Cradle Song","Songs of Innocence",1,"By happy, silent, moony beams!",4
+"175",11,"A Cradle Song","Songs of Innocence",2,"Sweet Sleep, with soft down",5
+"176",11,"A Cradle Song","Songs of Innocence",2,"Weave thy brows an infant crown!",6
+"177",11,"A Cradle Song","Songs of Innocence",2,"Sweet Sleep, angel mild,",7
+"178",11,"A Cradle Song","Songs of Innocence",2,"Hover o’er my happy child!",8
+"179",11,"A Cradle Song","Songs of Innocence",3,"Sweet smiles, in the night",9
+"180",11,"A Cradle Song","Songs of Innocence",3,"Hover over my delight!",10
+"181",11,"A Cradle Song","Songs of Innocence",3,"Sweet smiles, mother’s smiles,",11
+"182",11,"A Cradle Song","Songs of Innocence",3,"All the livelong night beguiles.",12
+"183",11,"A Cradle Song","Songs of Innocence",4,"Sweet moans, dovelike sighs,",13
+"184",11,"A Cradle Song","Songs of Innocence",4,"Chase not slumber from thy eyes!",14
+"185",11,"A Cradle Song","Songs of Innocence",4,"Sweet moans, sweeter smiles,",15
+"186",11,"A Cradle Song","Songs of Innocence",4,"All the dovelike moans beguiles.",16
+"187",11,"A Cradle Song","Songs of Innocence",5,"Sleep, sleep, happy child!",17
+"188",11,"A Cradle Song","Songs of Innocence",5,"All creation slept and smiled.",18
+"189",11,"A Cradle Song","Songs of Innocence",5,"Sleep, sleep, happy sleep,",19
+"190",11,"A Cradle Song","Songs of Innocence",5,"While o’er thee thy mother weep.",20
+"191",11,"A Cradle Song","Songs of Innocence",6,"Sweet babe, in thy face",21
+"192",11,"A Cradle Song","Songs of Innocence",6,"Holy image I can trace;",22
+"193",11,"A Cradle Song","Songs of Innocence",6,"Sweet babe, once like thee",23
+"194",11,"A Cradle Song","Songs of Innocence",6,"Thy Maker lay, and wept for me:",24
+"195",11,"A Cradle Song","Songs of Innocence",7,"Wept for me, for thee, for all,",25
+"196",11,"A Cradle Song","Songs of Innocence",7,"When He was an infant small.",26
+"197",11,"A Cradle Song","Songs of Innocence",7,"Thou His image ever see,",27
+"198",11,"A Cradle Song","Songs of Innocence",7,"Heavenly face that smiles on thee!",28
+"199",11,"A Cradle Song","Songs of Innocence",8,"Smiles on thee, on me, on all,",29
+"200",11,"A Cradle Song","Songs of Innocence",8,"Who became an infant small;",30
+"201",11,"A Cradle Song","Songs of Innocence",8,"Infant smiles are His own smiles;",31
+"202",11,"A Cradle Song","Songs of Innocence",8,"Heaven and earth to peace beguiles.",32
+"203",12,"The Divine Image","Songs of Innocence",1,"To Mercy, Pity, Peace, and Love,",1
+"204",12,"The Divine Image","Songs of Innocence",1,"All pray in their distress,",2
+"205",12,"The Divine Image","Songs of Innocence",1,"And to these virtues of delight",3
+"206",12,"The Divine Image","Songs of Innocence",1,"Return their thankfulness.",4
+"207",12,"The Divine Image","Songs of Innocence",2,"For Mercy, Pity, Peace, and Love,",5
+"208",12,"The Divine Image","Songs of Innocence",2,"Is God our Father dear;",6
+"209",12,"The Divine Image","Songs of Innocence",2,"And Mercy, Pity, Peace, and Love,",7
+"210",12,"The Divine Image","Songs of Innocence",2,"Is man, His child and care.",8
+"211",12,"The Divine Image","Songs of Innocence",3,"For Mercy has a human heart;",9
+"212",12,"The Divine Image","Songs of Innocence",3,"Pity, a human face;",10
+"213",12,"The Divine Image","Songs of Innocence",3,"And Love, the human form divine:",11
+"214",12,"The Divine Image","Songs of Innocence",3,"And Peace the human dress.",12
+"215",12,"The Divine Image","Songs of Innocence",4,"Then every man, of every clime,",13
+"216",12,"The Divine Image","Songs of Innocence",4,"That prays in his distress,",14
+"217",12,"The Divine Image","Songs of Innocence",4,"Prays to the human form divine:",15
+"218",12,"The Divine Image","Songs of Innocence",4,"Love, Mercy, Pity, Peace.",16
+"219",12,"The Divine Image","Songs of Innocence",5,"And all must love the human form,",17
+"220",12,"The Divine Image","Songs of Innocence",5,"In heathen, Turk, or Jew.",18
+"221",12,"The Divine Image","Songs of Innocence",5,"Where Mercy, Love, and Pity dwell,",19
+"222",12,"The Divine Image","Songs of Innocence",5,"There God is dwelling too.",20
+"223",13,"Holy Thursday","Songs of Innocence",1,"’Twas on a holy Thursday, their innocent faces clean,",1
+"224",13,"Holy Thursday","Songs of Innocence",1,"The children walking two and two, in red, and blue, and green:",2
+"225",13,"Holy Thursday","Songs of Innocence",1,"Grey-headed beadles walked before, with wands as white as snow,",3
+"226",13,"Holy Thursday","Songs of Innocence",1,"Till into the high dome of Paul’s they like Thames waters flow.",4
+"227",13,"Holy Thursday","Songs of Innocence",2,"O what a multitude they seemed, these flowers of London town!",5
+"228",13,"Holy Thursday","Songs of Innocence",2,"Seated in companies they sit, with radiance all their own.",6
+"229",13,"Holy Thursday","Songs of Innocence",2,"The hum of multitudes was there, but multitudes of lambs,",7
+"230",13,"Holy Thursday","Songs of Innocence",2,"Thousands of little boys and girls raising their innocent hands.",8
+"231",13,"Holy Thursday","Songs of Innocence",3,"Now like a mighty wind they raise to heaven the voice of song,",9
+"232",13,"Holy Thursday","Songs of Innocence",3,"Or like harmonious thunderings the seats of heaven among:",10
+"233",13,"Holy Thursday","Songs of Innocence",3,"Beneath them sit the aged men, wise guardians of the poor.",11
+"234",13,"Holy Thursday","Songs of Innocence",3,"Then cherish pity, lest you drive an angel from your door.",12
+"235",14,"Night","Songs of Innocence",1,"The sun descending in the West,",1
+"236",14,"Night","Songs of Innocence",1,"The evening star does shine;",2
+"237",14,"Night","Songs of Innocence",1,"The birds are silent in their nest,",3
+"238",14,"Night","Songs of Innocence",1,"And I must seek for mine.",4
+"239",14,"Night","Songs of Innocence",1,"The moon, like a flower",5
+"240",14,"Night","Songs of Innocence",1,"In heaven’s high bower,",6
+"241",14,"Night","Songs of Innocence",1,"With silent delight,",7
+"242",14,"Night","Songs of Innocence",1,"Sits and smiles on the night.",8
+"243",14,"Night","Songs of Innocence",2,"Farewell, green fields and happy groves,",9
+"244",14,"Night","Songs of Innocence",2,"Where flocks have took delight,",10
+"245",14,"Night","Songs of Innocence",2,"Where lambs have nibbled, silent moves",11
+"246",14,"Night","Songs of Innocence",2,"The feet of angels bright;",12
+"247",14,"Night","Songs of Innocence",2,"Unseen, they pour blessing,",13
+"248",14,"Night","Songs of Innocence",2,"And joy without ceasing,",14
+"249",14,"Night","Songs of Innocence",2,"On each bud and blossom,",15
+"250",14,"Night","Songs of Innocence",2,"And each sleeping bosom.",16
+"251",14,"Night","Songs of Innocence",3,"They look in every thoughtless nest",17
+"252",14,"Night","Songs of Innocence",3,"Where birds are covered warm;",18
+"253",14,"Night","Songs of Innocence",3,"They visit caves of every beast,",19
+"254",14,"Night","Songs of Innocence",3,"To keep them all from harm:",20
+"255",14,"Night","Songs of Innocence",3,"If they see any weeping",21
+"256",14,"Night","Songs of Innocence",3,"That should have been sleeping,",22
+"257",14,"Night","Songs of Innocence",3,"They pour sleep on their head,",23
+"258",14,"Night","Songs of Innocence",3,"And sit down by their bed.",24
+"259",14,"Night","Songs of Innocence",4,"When wolves and tigers howl for prey,",25
+"260",14,"Night","Songs of Innocence",4,"They pitying stand and weep;",26
+"261",14,"Night","Songs of Innocence",4,"Seeking to drive their thirst away,",27
+"262",14,"Night","Songs of Innocence",4,"And keep them from the sheep.",28
+"263",14,"Night","Songs of Innocence",4,"But, if they rush dreadful,",29
+"264",14,"Night","Songs of Innocence",4,"The angels, most heedful,",30
+"265",14,"Night","Songs of Innocence",4,"Receive each mild spirit,",31
+"266",14,"Night","Songs of Innocence",4,"New worlds to inherit.",32
+"267",14,"Night","Songs of Innocence",5,"And there the lion’s ruddy eyes",33
+"268",14,"Night","Songs of Innocence",5,"Shall flow with tears of gold:",34
+"269",14,"Night","Songs of Innocence",5,"And pitying the tender cries,",35
+"270",14,"Night","Songs of Innocence",5,"And walking round the fold:",36
+"271",14,"Night","Songs of Innocence",5,"Saying: ‘Wrath by His meekness,",37
+"272",14,"Night","Songs of Innocence",5,"And, by His health, sickness,",38
+"273",14,"Night","Songs of Innocence",5,"Is driven away",39
+"274",14,"Night","Songs of Innocence",5,"From our immortal day.",40
+"275",14,"Night","Songs of Innocence",6,"‘And now beside thee, bleating lamb,",41
+"276",14,"Night","Songs of Innocence",6,"I can lie down and sleep,",42
+"277",14,"Night","Songs of Innocence",6,"Or think on Him who bore thy name,",43
+"278",14,"Night","Songs of Innocence",6,"Graze after thee, and weep.",44
+"279",14,"Night","Songs of Innocence",6,"For, washed in life’s river,",45
+"280",14,"Night","Songs of Innocence",6,"My bright mane for ever",46
+"281",14,"Night","Songs of Innocence",6,"Shall shine like the gold,",47
+"282",14,"Night","Songs of Innocence",6,"As I guard o’er the fold.",48
+"283",15,"Spring","Songs of Innocence",1,"Sound the flute!",1
+"284",15,"Spring","Songs of Innocence",1,"Now it’s mute!",2
+"285",15,"Spring","Songs of Innocence",1,"Birds delight,",3
+"286",15,"Spring","Songs of Innocence",1,"Day and night,",4
+"287",15,"Spring","Songs of Innocence",1,"Nightingale,",5
+"288",15,"Spring","Songs of Innocence",1,"In the dale,",6
+"289",15,"Spring","Songs of Innocence",1,"Lark in sky,—",7
+"290",15,"Spring","Songs of Innocence",1,"Merrily,",8
+"291",15,"Spring","Songs of Innocence",1,"Merrily, merrily to welcome in the year.",9
+"292",15,"Spring","Songs of Innocence",2,"Little boy,",10
+"293",15,"Spring","Songs of Innocence",2,"Full of joy;",11
+"294",15,"Spring","Songs of Innocence",2,"Little girl,",12
+"295",15,"Spring","Songs of Innocence",2,"Sweet and small;",13
+"296",15,"Spring","Songs of Innocence",2,"Cock does crow,",14
+"297",15,"Spring","Songs of Innocence",2,"So do you;",15
+"298",15,"Spring","Songs of Innocence",2,"Merry voice,",16
+"299",15,"Spring","Songs of Innocence",2,"Infant noise;",17
+"300",15,"Spring","Songs of Innocence",2,"Merrily, merrily to welcome in the year.",18
+"301",15,"Spring","Songs of Innocence",3,"Little lamb,",19
+"302",15,"Spring","Songs of Innocence",3,"Here I am;",20
+"303",15,"Spring","Songs of Innocence",3,"Come and lick",21
+"304",15,"Spring","Songs of Innocence",3,"My white neck;",22
+"305",15,"Spring","Songs of Innocence",3,"Let me pull",23
+"306",15,"Spring","Songs of Innocence",3,"Your soft wool;",24
+"307",15,"Spring","Songs of Innocence",3,"Let me kiss",25
+"308",15,"Spring","Songs of Innocence",3,"Your soft face;",26
+"309",15,"Spring","Songs of Innocence",3,"Merrily, merrily we welcome in the year.",27
+"310",16,"Nurse’s Song","Songs of Innocence",1,"When voices of children are heard on the green,",1
+"311",16,"Nurse’s Song","Songs of Innocence",1,"And laughing is heard on the hill,",2
+"312",16,"Nurse’s Song","Songs of Innocence",1,"My heart is at rest within my breast,",3
+"313",16,"Nurse’s Song","Songs of Innocence",1,"And everything else is still.",4
+"314",16,"Nurse’s Song","Songs of Innocence",2,"‘Then come home, my children, the sun is gone down,",5
+"315",16,"Nurse’s Song","Songs of Innocence",2,"And the dews of night arise;",6
+"316",16,"Nurse’s Song","Songs of Innocence",2,"Come, come, leave off play, and let us away,",7
+"317",16,"Nurse’s Song","Songs of Innocence",2,"Till the morning appears in the skies.’",8
+"318",16,"Nurse’s Song","Songs of Innocence",3,"‘No, no, let us play, for it is yet day,",9
+"319",16,"Nurse’s Song","Songs of Innocence",3,"And we cannot go to sleep;",10
+"320",16,"Nurse’s Song","Songs of Innocence",3,"Besides, in the sky the little birds fly,",11
+"321",16,"Nurse’s Song","Songs of Innocence",3,"And the hills are all covered with sheep.’",12
+"322",16,"Nurse’s Song","Songs of Innocence",4,"‘Well, well, go and play till the light fades away,",13
+"323",16,"Nurse’s Song","Songs of Innocence",4,"And then go home to bed.’",14
+"324",16,"Nurse’s Song","Songs of Innocence",4,"The little ones leaped, and shouted, and laughed,",15
+"325",16,"Nurse’s Song","Songs of Innocence",4,"And all the hills echoèd.",16
+"326",17,"Infant Joy","Songs of Innocence",1,"‘I have no name;",1
+"327",17,"Infant Joy","Songs of Innocence",1,"I am but two days old.’",2
+"328",17,"Infant Joy","Songs of Innocence",1,"What shall I call thee?",3
+"329",17,"Infant Joy","Songs of Innocence",1,"‘I happy am,",4
+"330",17,"Infant Joy","Songs of Innocence",1,"Joy is my name.’",5
+"331",17,"Infant Joy","Songs of Innocence",1,"Sweet joy befall thee!",6
+"332",17,"Infant Joy","Songs of Innocence",2,"Pretty joy!",7
+"333",17,"Infant Joy","Songs of Innocence",2,"Sweet joy, but two days old.",8
+"334",17,"Infant Joy","Songs of Innocence",2,"Sweet joy I call thee:",9
+"335",17,"Infant Joy","Songs of Innocence",2,"Thou dost smile,",10
+"336",17,"Infant Joy","Songs of Innocence",2,"I sing the while;",11
+"337",17,"Infant Joy","Songs of Innocence",2,"Sweet joy befall thee!",12
+"338",18,"A Dream","Songs of Innocence",1,"Once a dream did weave a shade",1
+"339",18,"A Dream","Songs of Innocence",1,"O’er my angel-guarded bed,",2
+"340",18,"A Dream","Songs of Innocence",1,"That an emmet lost its way",3
+"341",18,"A Dream","Songs of Innocence",1,"Where on grass methought I lay.",4
+"342",18,"A Dream","Songs of Innocence",2,"Troubled, wildered, and forlorn,",5
+"343",18,"A Dream","Songs of Innocence",2,"Dark, benighted, travel-worn,",6
+"344",18,"A Dream","Songs of Innocence",2,"Over many a tangled spray,",7
+"345",18,"A Dream","Songs of Innocence",2,"All heart-broke, I heard her say:",8
+"346",18,"A Dream","Songs of Innocence",3,"‘O my children! do they cry,",9
+"347",18,"A Dream","Songs of Innocence",3,"Do they hear their father sigh?",10
+"348",18,"A Dream","Songs of Innocence",3,"Now they look abroad to see,",11
+"349",18,"A Dream","Songs of Innocence",3,"Now return and weep for me.’",12
+"350",18,"A Dream","Songs of Innocence",4,"Pitying, I dropped a tear:",13
+"351",18,"A Dream","Songs of Innocence",4,"But I saw a glow-worm near,",14
+"352",18,"A Dream","Songs of Innocence",4,"Who replied, ‘What wailing wight",15
+"353",18,"A Dream","Songs of Innocence",4,"Calls the watchman of the night?’",16
+"354",18,"A Dream","Songs of Innocence",5,"‘I am set to light the ground,",17
+"355",18,"A Dream","Songs of Innocence",5,"While the beetle goes his round:",18
+"356",18,"A Dream","Songs of Innocence",5,"Follow now the beetle’s hum;",19
+"357",18,"A Dream","Songs of Innocence",5,"Little wanderer, hie thee home!’",20
+"358",19,"On Another’s Sorrow","Songs of Innocence",1,"Can I see another’s woe,",1
+"359",19,"On Another’s Sorrow","Songs of Innocence",1,"And not be in sorrow too?",2
+"360",19,"On Another’s Sorrow","Songs of Innocence",1,"Can I see another’s grief,",3
+"361",19,"On Another’s Sorrow","Songs of Innocence",1,"And not seek for kind relief?",4
+"362",19,"On Another’s Sorrow","Songs of Innocence",2,"Can I see a falling tear,",5
+"363",19,"On Another’s Sorrow","Songs of Innocence",2,"And not feel my sorrow’s share?",6
+"364",19,"On Another’s Sorrow","Songs of Innocence",2,"Can a father see his child",7
+"365",19,"On Another’s Sorrow","Songs of Innocence",2,"Weep, nor be with sorrow filled?",8
+"366",19,"On Another’s Sorrow","Songs of Innocence",3,"Can a mother sit and hear",9
+"367",19,"On Another’s Sorrow","Songs of Innocence",3,"An infant groan, an infant fear?",10
+"368",19,"On Another’s Sorrow","Songs of Innocence",3,"No, no! never can it be!",11
+"369",19,"On Another’s Sorrow","Songs of Innocence",3,"Never, never can it be!",12
+"370",19,"On Another’s Sorrow","Songs of Innocence",4,"And can He who smiles on all",13
+"371",19,"On Another’s Sorrow","Songs of Innocence",4,"Hear the wren with sorrows small,",14
+"372",19,"On Another’s Sorrow","Songs of Innocence",4,"Hear the small bird’s grief and care,",15
+"373",19,"On Another’s Sorrow","Songs of Innocence",4,"Hear the woes that infants bear—",16
+"374",19,"On Another’s Sorrow","Songs of Innocence",5,"And not sit beside the nest,",17
+"375",19,"On Another’s Sorrow","Songs of Innocence",5,"Pouring pity in their breast,",18
+"376",19,"On Another’s Sorrow","Songs of Innocence",5,"And not sit the cradle near,",19
+"377",19,"On Another’s Sorrow","Songs of Innocence",5,"Weeping tear on infant’s tear?",20
+"378",19,"On Another’s Sorrow","Songs of Innocence",6,"And not sit both night and day,",21
+"379",19,"On Another’s Sorrow","Songs of Innocence",6,"Wiping all our tears away?",22
+"380",19,"On Another’s Sorrow","Songs of Innocence",6,"O no! never can it be!",23
+"381",19,"On Another’s Sorrow","Songs of Innocence",6,"Never, never can it be!",24
+"382",19,"On Another’s Sorrow","Songs of Innocence",7,"He doth give His joy to all:",25
+"383",19,"On Another’s Sorrow","Songs of Innocence",7,"He becomes an infant small,",26
+"384",19,"On Another’s Sorrow","Songs of Innocence",7,"He becomes a man of woe,",27
+"385",19,"On Another’s Sorrow","Songs of Innocence",7,"He doth feel the sorrow too.",28
+"386",19,"On Another’s Sorrow","Songs of Innocence",8,"Think not thou canst sigh a sigh,",29
+"387",19,"On Another’s Sorrow","Songs of Innocence",8,"And thy Maker is not by:",30
+"388",19,"On Another’s Sorrow","Songs of Innocence",8,"Think not thou canst weep a tear,",31
+"389",19,"On Another’s Sorrow","Songs of Innocence",8,"And thy Maker is not near.",32
+"390",19,"On Another’s Sorrow","Songs of Innocence",9,"O He gives to us His joy,",33
+"391",19,"On Another’s Sorrow","Songs of Innocence",9,"That our grief He may destroy:",34
+"392",19,"On Another’s Sorrow","Songs of Innocence",9,"Till our grief is fled and gone",35
+"393",19,"On Another’s Sorrow","Songs of Innocence",9,"He doth sit by us and moan.",36
+"394",20,"Introduction","Songs of Experience",1,"Hear the voice of the Bard,",1
+"395",20,"Introduction","Songs of Experience",1,"Who present, past, and future, sees;",2
+"396",20,"Introduction","Songs of Experience",1,"Whose ears have heard",3
+"397",20,"Introduction","Songs of Experience",1,"The Holy Word",4
+"398",20,"Introduction","Songs of Experience",1,"That walked among the ancient trees;",5
+"399",20,"Introduction","Songs of Experience",2,"Calling the lapséd soul,",6
+"400",20,"Introduction","Songs of Experience",2,"And weeping in the evening dew;",7
+"401",20,"Introduction","Songs of Experience",2,"That might control",8
+"402",20,"Introduction","Songs of Experience",2,"The starry pole,",9
+"403",20,"Introduction","Songs of Experience",2,"And fallen, fallen light renew!",10
+"404",20,"Introduction","Songs of Experience",3,"‘O Earth, O Earth, return!",11
+"405",20,"Introduction","Songs of Experience",3,"Arise from out the dewy grass!",12
+"406",20,"Introduction","Songs of Experience",3,"Night is worn,",13
+"407",20,"Introduction","Songs of Experience",3,"And the morn",14
+"408",20,"Introduction","Songs of Experience",3,"Rises from the slumbrous mass.",15
+"409",20,"Introduction","Songs of Experience",4,"‘Turn away no more;",16
+"410",20,"Introduction","Songs of Experience",4,"Why wilt thou turn away?",17
+"411",20,"Introduction","Songs of Experience",4,"The starry floor,",18
+"412",20,"Introduction","Songs of Experience",4,"The watery shore,",19
+"413",20,"Introduction","Songs of Experience",4,"Is given thee till the break of day.’",20
+"414",21,"Earth’s Answer","Songs of Experience",1,"Earth raised up her head",1
+"415",21,"Earth’s Answer","Songs of Experience",1,"From the darkness dread and drear,",2
+"416",21,"Earth’s Answer","Songs of Experience",1,"Her light fled,",3
+"417",21,"Earth’s Answer","Songs of Experience",1,"Stony, dread,",4
+"418",21,"Earth’s Answer","Songs of Experience",1,"And her locks covered with grey despair.",5
+"419",21,"Earth’s Answer","Songs of Experience",2,"‘Prisoned on watery shore,",6
+"420",21,"Earth’s Answer","Songs of Experience",2,"Starry jealousy does keep my den",7
+"421",21,"Earth’s Answer","Songs of Experience",2,"Cold and hoar;",8
+"422",21,"Earth’s Answer","Songs of Experience",2,"Weeping o’er,",9
+"423",21,"Earth’s Answer","Songs of Experience",2,"I hear the father of the ancient men.",10
+"424",21,"Earth’s Answer","Songs of Experience",3,"‘Selfish father of men!",11
+"425",21,"Earth’s Answer","Songs of Experience",3,"Cruel, jealous, selfish fear!",12
+"426",21,"Earth’s Answer","Songs of Experience",3,"Can delight,",13
+"427",21,"Earth’s Answer","Songs of Experience",3,"Chained in night,",14
+"428",21,"Earth’s Answer","Songs of Experience",3,"The virgins of youth and morning bear.",15
+"429",21,"Earth’s Answer","Songs of Experience",4,"‘Does spring hide its joy,",16
+"430",21,"Earth’s Answer","Songs of Experience",4,"When buds and blossoms grow?",17
+"431",21,"Earth’s Answer","Songs of Experience",4,"Does the sower",18
+"432",21,"Earth’s Answer","Songs of Experience",4,"Sow by night,",19
+"433",21,"Earth’s Answer","Songs of Experience",4,"Or the ploughman in darkness plough?",20
+"434",21,"Earth’s Answer","Songs of Experience",5,"‘Break this heavy chain,",21
+"435",21,"Earth’s Answer","Songs of Experience",5,"That does freeze my bones around!",22
+"436",21,"Earth’s Answer","Songs of Experience",5,"Selfish, vain,",23
+"437",21,"Earth’s Answer","Songs of Experience",5,"Eternal bane,",24
+"438",21,"Earth’s Answer","Songs of Experience",5,"That free love with bondage bound.’",25
+"439",22,"The Clod and the Pebble","Songs of Experience",1,"‘Love seeketh not itself to please,",1
+"440",22,"The Clod and the Pebble","Songs of Experience",1,"Nor for itself hath any care,",2
+"441",22,"The Clod and the Pebble","Songs of Experience",1,"But for another gives its ease,",3
+"442",22,"The Clod and the Pebble","Songs of Experience",1,"And builds a heaven in hell’s despair.’",4
+"443",22,"The Clod and the Pebble","Songs of Experience",2,"So sung a little clod of clay,",5
+"444",22,"The Clod and the Pebble","Songs of Experience",2,"Trodden with the cattle’s feet,",6
+"445",22,"The Clod and the Pebble","Songs of Experience",2,"But a pebble of the brook",7
+"446",22,"The Clod and the Pebble","Songs of Experience",2,"Warbled out these metres meet:",8
+"447",22,"The Clod and the Pebble","Songs of Experience",3,"‘Love seeketh only Self to please,",9
+"448",22,"The Clod and the Pebble","Songs of Experience",3,"To bind another to its delight,",10
+"449",22,"The Clod and the Pebble","Songs of Experience",3,"Joys in another’s loss of ease,",11
+"450",22,"The Clod and the Pebble","Songs of Experience",3,"And builds a hell in heaven’s despite.’",12
+"451",23,"Holy Thursday","Songs of Experience",1,"Is this a holy thing to see",1
+"452",23,"Holy Thursday","Songs of Experience",1,"In a rich and fruitful land,—",2
+"453",23,"Holy Thursday","Songs of Experience",1,"Babes reduced to misery,",3
+"454",23,"Holy Thursday","Songs of Experience",1,"Fed with cold and usurous hand?",4
+"455",23,"Holy Thursday","Songs of Experience",2,"Is that trembling cry a song?",5
+"456",23,"Holy Thursday","Songs of Experience",2,"Can it be a song of joy?",6
+"457",23,"Holy Thursday","Songs of Experience",2,"And so many children poor?",7
+"458",23,"Holy Thursday","Songs of Experience",2,"It is a land of poverty!",8
+"459",23,"Holy Thursday","Songs of Experience",3,"And their sun does never shine,",9
+"460",23,"Holy Thursday","Songs of Experience",3,"And their fields are bleak and bare,",10
+"461",23,"Holy Thursday","Songs of Experience",3,"And their ways are filled with thorns,",11
+"462",23,"Holy Thursday","Songs of Experience",3,"It is eternal winter there.",12
+"463",23,"Holy Thursday","Songs of Experience",4,"For where’er the sun does shine,",13
+"464",23,"Holy Thursday","Songs of Experience",4,"And where’er the rain does fall,",14
+"465",23,"Holy Thursday","Songs of Experience",4,"Babe can never hunger there,",15
+"466",23,"Holy Thursday","Songs of Experience",4,"Nor poverty the mind appal.",16
+"467",24,"The Little Girl Lost","Songs of Experience",1,"In futurity",1
+"468",24,"The Little Girl Lost","Songs of Experience",1,"I prophesy",2
+"469",24,"The Little Girl Lost","Songs of Experience",1,"That the earth from sleep",3
+"470",24,"The Little Girl Lost","Songs of Experience",1,"(Grave the sentence deep)",4
+"471",24,"The Little Girl Lost","Songs of Experience",2,"Shall arise, and seek",5
+"472",24,"The Little Girl Lost","Songs of Experience",2,"For her Maker meek;",6
+"473",24,"The Little Girl Lost","Songs of Experience",2,"And the desert wild",7
+"474",24,"The Little Girl Lost","Songs of Experience",2,"Become a garden mild.",8
+"475",24,"The Little Girl Lost","Songs of Experience",3,"In the southern clime,",9
+"476",24,"The Little Girl Lost","Songs of Experience",3,"Where the summer’s prime",10
+"477",24,"The Little Girl Lost","Songs of Experience",3,"Never fades away,",11
+"478",24,"The Little Girl Lost","Songs of Experience",3,"Lovely Lyca lay.",12
+"479",24,"The Little Girl Lost","Songs of Experience",4,"Seven summers old",13
+"480",24,"The Little Girl Lost","Songs of Experience",4,"Lovely Lyca told.",14
+"481",24,"The Little Girl Lost","Songs of Experience",4,"She had wandered long,",15
+"482",24,"The Little Girl Lost","Songs of Experience",4,"Hearing wild birds’ song.",16
+"483",24,"The Little Girl Lost","Songs of Experience",5,"‘Sweet sleep, come to me,",17
+"484",24,"The Little Girl Lost","Songs of Experience",5,"Underneath this tree;",18
+"485",24,"The Little Girl Lost","Songs of Experience",5,"Do father, mother, weep?",19
+"486",24,"The Little Girl Lost","Songs of Experience",5,"Where can Lyca sleep?",20
+"487",24,"The Little Girl Lost","Songs of Experience",6,"‘Lost in desert wild",21
+"488",24,"The Little Girl Lost","Songs of Experience",6,"Is your little child.",22
+"489",24,"The Little Girl Lost","Songs of Experience",6,"How can Lyca sleep",23
+"490",24,"The Little Girl Lost","Songs of Experience",6,"If her mother weep?",24
+"491",24,"The Little Girl Lost","Songs of Experience",7,"‘If her heart does ache,",25
+"492",24,"The Little Girl Lost","Songs of Experience",7,"Then let Lyca wake;",26
+"493",24,"The Little Girl Lost","Songs of Experience",7,"If my mother sleep,",27
+"494",24,"The Little Girl Lost","Songs of Experience",7,"Lyca shall not weep.",28
+"495",24,"The Little Girl Lost","Songs of Experience",8,"‘Frowning, frowning night,",29
+"496",24,"The Little Girl Lost","Songs of Experience",8,"O’er this desert bright",30
+"497",24,"The Little Girl Lost","Songs of Experience",8,"Let thy moon arise,",31
+"498",24,"The Little Girl Lost","Songs of Experience",8,"While I close my eyes.’",32
+"499",24,"The Little Girl Lost","Songs of Experience",9,"Sleeping Lyca lay,",33
+"500",24,"The Little Girl Lost","Songs of Experience",9,"While the beasts of prey,",34
+"501",24,"The Little Girl Lost","Songs of Experience",9,"Come from caverns deep,",35
+"502",24,"The Little Girl Lost","Songs of Experience",9,"Viewed the maid asleep.",36
+"503",24,"The Little Girl Lost","Songs of Experience",10,"The kingly lion stood,",37
+"504",24,"The Little Girl Lost","Songs of Experience",10,"And the virgin viewed:",38
+"505",24,"The Little Girl Lost","Songs of Experience",10,"Then he gambolled round",39
+"506",24,"The Little Girl Lost","Songs of Experience",10,"O’er the hallowed ground.",40
+"507",24,"The Little Girl Lost","Songs of Experience",11,"Leopards, tigers, play",41
+"508",24,"The Little Girl Lost","Songs of Experience",11,"Round her as she lay;",42
+"509",24,"The Little Girl Lost","Songs of Experience",11,"While the lion old",43
+"510",24,"The Little Girl Lost","Songs of Experience",11,"Bowed his mane of gold,",44
+"511",24,"The Little Girl Lost","Songs of Experience",12,"And her bosom lick,",45
+"512",24,"The Little Girl Lost","Songs of Experience",12,"And upon her neck,",46
+"513",24,"The Little Girl Lost","Songs of Experience",12,"From his eyes of flame,",47
+"514",24,"The Little Girl Lost","Songs of Experience",12,"Ruby tears there came;",48
+"515",24,"The Little Girl Lost","Songs of Experience",13,"While the lioness",49
+"516",24,"The Little Girl Lost","Songs of Experience",13,"Loosed her slender dress,",50
+"517",24,"The Little Girl Lost","Songs of Experience",13,"And naked they conveyed",51
+"518",24,"The Little Girl Lost","Songs of Experience",13,"To caves the sleeping maid.",52
+"519",25,"The Little Girl Found","Songs of Experience",1,"All the night in woe",1
+"520",25,"The Little Girl Found","Songs of Experience",1,"Lyca’s parents go",2
+"521",25,"The Little Girl Found","Songs of Experience",1,"Over valleys deep,",3
+"522",25,"The Little Girl Found","Songs of Experience",1,"While the deserts weep.",4
+"523",25,"The Little Girl Found","Songs of Experience",2,"Tired and woe-begone,",5
+"524",25,"The Little Girl Found","Songs of Experience",2,"Hoarse with making moan,",6
+"525",25,"The Little Girl Found","Songs of Experience",2,"Arm in arm, seven days",7
+"526",25,"The Little Girl Found","Songs of Experience",2,"They traced the desert ways.",8
+"527",25,"The Little Girl Found","Songs of Experience",3,"Seven nights they sleep",9
+"528",25,"The Little Girl Found","Songs of Experience",3,"Among shadows deep,",10
+"529",25,"The Little Girl Found","Songs of Experience",3,"And dream they see their child",11
+"530",25,"The Little Girl Found","Songs of Experience",3,"Starved in desert wild.",12
+"531",25,"The Little Girl Found","Songs of Experience",4,"Pale through pathless ways",13
+"532",25,"The Little Girl Found","Songs of Experience",4,"The fancied image strays,",14
+"533",25,"The Little Girl Found","Songs of Experience",4,"Famished, weeping, weak,",15
+"534",25,"The Little Girl Found","Songs of Experience",4,"With hollow piteous shriek.",16
+"535",25,"The Little Girl Found","Songs of Experience",5,"Rising from unrest,",17
+"536",25,"The Little Girl Found","Songs of Experience",5,"The trembling woman pressed",18
+"537",25,"The Little Girl Found","Songs of Experience",5,"With feet of weary woe;",19
+"538",25,"The Little Girl Found","Songs of Experience",5,"She could no further go.",20
+"539",25,"The Little Girl Found","Songs of Experience",6,"In his arms he bore",21
+"540",25,"The Little Girl Found","Songs of Experience",6,"Her, armed with sorrow sore;",22
+"541",25,"The Little Girl Found","Songs of Experience",6,"Till before their way",23
+"542",25,"The Little Girl Found","Songs of Experience",6,"A couching lion lay.",24
+"543",25,"The Little Girl Found","Songs of Experience",7,"Turning back was vain:",25
+"544",25,"The Little Girl Found","Songs of Experience",7,"Soon his heavy mane",26
+"545",25,"The Little Girl Found","Songs of Experience",7,"Bore them to the ground,",27
+"546",25,"The Little Girl Found","Songs of Experience",7,"Then he stalked around,",28
+"547",25,"The Little Girl Found","Songs of Experience",8,"Smelling to his prey;",29
+"548",25,"The Little Girl Found","Songs of Experience",8,"But their fears allay",30
+"549",25,"The Little Girl Found","Songs of Experience",8,"When he licks their hands,",31
+"550",25,"The Little Girl Found","Songs of Experience",8,"And silent by them stands.",32
+"551",25,"The Little Girl Found","Songs of Experience",9,"They look upon his eyes,",33
+"552",25,"The Little Girl Found","Songs of Experience",9,"Filled with deep surprise;",34
+"553",25,"The Little Girl Found","Songs of Experience",9,"And wondering behold",35
+"554",25,"The Little Girl Found","Songs of Experience",9,"A spirit armed in gold.",36
+"555",25,"The Little Girl Found","Songs of Experience",10,"On his head a crown,",37
+"556",25,"The Little Girl Found","Songs of Experience",10,"On his shoulders down",38
+"557",25,"The Little Girl Found","Songs of Experience",10,"Flowed his golden hair.",39
+"558",25,"The Little Girl Found","Songs of Experience",10,"Gone was all their care.",40
+"559",25,"The Little Girl Found","Songs of Experience",11,"‘Follow me,’ he said;",41
+"560",25,"The Little Girl Found","Songs of Experience",11,"‘Weep not for the maid;",42
+"561",25,"The Little Girl Found","Songs of Experience",11,"In my palace deep,",43
+"562",25,"The Little Girl Found","Songs of Experience",11,"Lyca lies asleep.’",44
+"563",25,"The Little Girl Found","Songs of Experience",12,"Then they followèd",45
+"564",25,"The Little Girl Found","Songs of Experience",12,"Where the vision led,",46
+"565",25,"The Little Girl Found","Songs of Experience",12,"And saw their sleeping child",47
+"566",25,"The Little Girl Found","Songs of Experience",12,"Among tigers wild.",48
+"567",25,"The Little Girl Found","Songs of Experience",13,"To this day they dwell",49
+"568",25,"The Little Girl Found","Songs of Experience",13,"In a lonely dell,",50
+"569",25,"The Little Girl Found","Songs of Experience",13,"Nor fear the wolvish howl",51
+"570",25,"The Little Girl Found","Songs of Experience",13,"Nor the lion’s growl.",52
+"571",26,"The Chimney-Sweeper","Songs of Experience",1,"A little black thing among the snow,",1
+"572",26,"The Chimney-Sweeper","Songs of Experience",1,"Crying! ‘weep! weep!’ in notes of woe!",2
+"573",26,"The Chimney-Sweeper","Songs of Experience",1,"‘Where are thy father and mother? Say!’—",3
+"574",26,"The Chimney-Sweeper","Songs of Experience",1,"‘They are both gone up to the church to pray.",4
+"575",26,"The Chimney-Sweeper","Songs of Experience",2,"‘Because I was happy upon the heath,",5
+"576",26,"The Chimney-Sweeper","Songs of Experience",2,"And smiled among the winter’s snow,",6
+"577",26,"The Chimney-Sweeper","Songs of Experience",2,"They clothed me in the clothes of death,",7
+"578",26,"The Chimney-Sweeper","Songs of Experience",2,"And taught me to sing the notes of woe.",8
+"579",26,"The Chimney-Sweeper","Songs of Experience",3,"‘And because I am happy and dance and sing,",9
+"580",26,"The Chimney-Sweeper","Songs of Experience",3,"They think they have done me no injury,",10
+"581",26,"The Chimney-Sweeper","Songs of Experience",3,"And are gone to praise God and His priest and king,",11
+"582",26,"The Chimney-Sweeper","Songs of Experience",3,"Who made up a heaven of our misery.’",12
+"583",27,"Nurse’s Song","Songs of Experience",1,"When the voices of children are heard on the green,",1
+"584",27,"Nurse’s Song","Songs of Experience",1,"And whisperings are in the dale,",2
+"585",27,"Nurse’s Song","Songs of Experience",1,"The days of my youth rise fresh in my mind,",3
+"586",27,"Nurse’s Song","Songs of Experience",1,"My face turns green and pale.",4
+"587",27,"Nurse’s Song","Songs of Experience",2,"Then come home, my children, the sun is gone down,",5
+"588",27,"Nurse’s Song","Songs of Experience",2,"And the dews of night arise;",6
+"589",27,"Nurse’s Song","Songs of Experience",2,"Your spring and your day are wasted in play,",7
+"590",27,"Nurse’s Song","Songs of Experience",2,"And your winter and night in disguise.",8
+"591",28,"The Sick Rose","Songs of Experience",1,"O rose, thou art sick!",1
+"592",28,"The Sick Rose","Songs of Experience",1,"The invisible worm,",2
+"593",28,"The Sick Rose","Songs of Experience",1,"That flies in the night,",3
+"594",28,"The Sick Rose","Songs of Experience",1,"In the howling storm,",4
+"595",28,"The Sick Rose","Songs of Experience",2,"Has found out thy bed",5
+"596",28,"The Sick Rose","Songs of Experience",2,"Of crimson joy,",6
+"597",28,"The Sick Rose","Songs of Experience",2,"And his dark secret love",7
+"598",28,"The Sick Rose","Songs of Experience",2,"Does thy life destroy.",8
+"599",29,"The Fly","Songs of Experience",1,"Little Fly,",1
+"600",29,"The Fly","Songs of Experience",1,"Thy summer’s play",2
+"601",29,"The Fly","Songs of Experience",1,"My thoughtless hand",3
+"602",29,"The Fly","Songs of Experience",1,"Has brushed away.",4
+"603",29,"The Fly","Songs of Experience",2,"Am not I",5
+"604",29,"The Fly","Songs of Experience",2,"A fly like thee?",6
+"605",29,"The Fly","Songs of Experience",2,"Or art not thou",7
+"606",29,"The Fly","Songs of Experience",2,"A man like me?",8
+"607",29,"The Fly","Songs of Experience",3,"For I dance,",9
+"608",29,"The Fly","Songs of Experience",3,"And drink, and sing,",10
+"609",29,"The Fly","Songs of Experience",3,"Till some blind hand",11
+"610",29,"The Fly","Songs of Experience",3,"Shall brush my wing.",12
+"611",29,"The Fly","Songs of Experience",4,"If thought is life",13
+"612",29,"The Fly","Songs of Experience",4,"And strength and breath,",14
+"613",29,"The Fly","Songs of Experience",4,"And the want",15
+"614",29,"The Fly","Songs of Experience",4,"Of thought is death;",16
+"615",29,"The Fly","Songs of Experience",5,"Then am I",17
+"616",29,"The Fly","Songs of Experience",5,"A happy fly.",18
+"617",29,"The Fly","Songs of Experience",5,"If I live,",19
+"618",29,"The Fly","Songs of Experience",5,"Or if I die.",20
+"619",30,"The Angel","Songs of Experience",1,"I dreamt a dream!  What can it mean?",1
+"620",30,"The Angel","Songs of Experience",1,"And that I was a maiden Queen",2
+"621",30,"The Angel","Songs of Experience",1,"Guarded by an Angel mild:",3
+"622",30,"The Angel","Songs of Experience",1,"Witless woe was ne’er beguiled!",4
+"623",30,"The Angel","Songs of Experience",2,"And I wept both night and day,",5
+"624",30,"The Angel","Songs of Experience",2,"And he wiped my tears away;",6
+"625",30,"The Angel","Songs of Experience",2,"And I wept both day and night,",7
+"626",30,"The Angel","Songs of Experience",2,"And hid from him my heart’s delight.",8
+"627",30,"The Angel","Songs of Experience",3,"So he took his wings, and fled;",9
+"628",30,"The Angel","Songs of Experience",3,"Then the morn blushed rosy red.",10
+"629",30,"The Angel","Songs of Experience",3,"I dried my tears, and armed my fears",11
+"630",30,"The Angel","Songs of Experience",3,"With ten thousand shields and spears.",12
+"631",30,"The Angel","Songs of Experience",4,"Soon my Angel came again;",13
+"632",30,"The Angel","Songs of Experience",4,"I was armed, he came in vain;",14
+"633",30,"The Angel","Songs of Experience",4,"For the time of youth was fled,",15
+"634",30,"The Angel","Songs of Experience",4,"And grey hairs were on my head.",16
+"635",31,"The Tiger","Songs of Experience",1,"Tiger, tiger, burning bright",1
+"636",31,"The Tiger","Songs of Experience",1,"In the forests of the night,",2
+"637",31,"The Tiger","Songs of Experience",1,"What immortal hand or eye",3
+"638",31,"The Tiger","Songs of Experience",1,"Could frame thy fearful symmetry?",4
+"639",31,"The Tiger","Songs of Experience",2,"In what distant deeps or skies",5
+"640",31,"The Tiger","Songs of Experience",2,"Burnt the fire of thine eyes?",6
+"641",31,"The Tiger","Songs of Experience",2,"On what wings dare he aspire?",7
+"642",31,"The Tiger","Songs of Experience",2,"What the hand dare seize the fire?",8
+"643",31,"The Tiger","Songs of Experience",3,"And what shoulder and what art",9
+"644",31,"The Tiger","Songs of Experience",3,"Could twist the sinews of thy heart?",10
+"645",31,"The Tiger","Songs of Experience",3,"And, when thy heart began to beat,",11
+"646",31,"The Tiger","Songs of Experience",3,"What dread hand and what dread feet?",12
+"647",31,"The Tiger","Songs of Experience",4,"What the hammer? what the chain?",13
+"648",31,"The Tiger","Songs of Experience",4,"In what furnace was thy brain?",14
+"649",31,"The Tiger","Songs of Experience",4,"What the anvil? what dread grasp",15
+"650",31,"The Tiger","Songs of Experience",4,"Dare its deadly terrors clasp?",16
+"651",31,"The Tiger","Songs of Experience",5,"When the stars threw down their spears,",17
+"652",31,"The Tiger","Songs of Experience",5,"And watered heaven with their tears,",18
+"653",31,"The Tiger","Songs of Experience",5,"Did He smile His work to see?",19
+"654",31,"The Tiger","Songs of Experience",5,"Did He who made the lamb make thee?",20
+"655",31,"The Tiger","Songs of Experience",6,"Tiger, tiger, burning bright",21
+"656",31,"The Tiger","Songs of Experience",6,"In the forests of the night,",22
+"657",31,"The Tiger","Songs of Experience",6,"What immortal hand or eye",23
+"658",31,"The Tiger","Songs of Experience",6,"Dare frame thy fearful symmetry?",24
+"659",32,"My Pretty Rose Tree","Songs of Experience",1,"A flower was offered to me,",1
+"660",32,"My Pretty Rose Tree","Songs of Experience",1,"Such a flower as May never bore;",2
+"661",32,"My Pretty Rose Tree","Songs of Experience",1,"But I said, ‘I’ve a pretty rose tree,’",3
+"662",32,"My Pretty Rose Tree","Songs of Experience",1,"And I passed the sweet flower o’er.",4
+"663",32,"My Pretty Rose Tree","Songs of Experience",2,"Then I went to my pretty rose tree,",5
+"664",32,"My Pretty Rose Tree","Songs of Experience",2,"To tend her by day and by night;",6
+"665",32,"My Pretty Rose Tree","Songs of Experience",2,"But my rose turned away with jealousy,",7
+"666",32,"My Pretty Rose Tree","Songs of Experience",2,"And her thorns were my only delight.",8
+"667",33,"Ah, Sunflower","Songs of Experience",1,"Ah, sunflower, weary of time,",1
+"668",33,"Ah, Sunflower","Songs of Experience",1,"Who countest the steps of the sun;",2
+"669",33,"Ah, Sunflower","Songs of Experience",1,"Seeking after that sweet golden clime",3
+"670",33,"Ah, Sunflower","Songs of Experience",1,"Where the traveller’s journey is done;",4
+"671",33,"Ah, Sunflower","Songs of Experience",2,"Where the Youth pined away with desire,",5
+"672",33,"Ah, Sunflower","Songs of Experience",2,"And the pale virgin shrouded in snow,",6
+"673",33,"Ah, Sunflower","Songs of Experience",2,"Arise from their graves, and aspire",7
+"674",33,"Ah, Sunflower","Songs of Experience",2,"Where my Sunflower wishes to go!",8
+"675",34,"The Lily","Songs of Experience",1,"The modest Rose puts forth a thorn,",1
+"676",34,"The Lily","Songs of Experience",1,"The humble sheep a threat’ning horn:",2
+"677",34,"The Lily","Songs of Experience",1,"While the Lily white shall in love delight,",3
+"678",34,"The Lily","Songs of Experience",1,"Nor a thorn nor a threat stain her beauty bright.",4
+"679",35,"The Garden of Love","Songs of Experience",1,"I went to the Garden of Love,",1
+"680",35,"The Garden of Love","Songs of Experience",1,"And saw what I never had seen;",2
+"681",35,"The Garden of Love","Songs of Experience",1,"A Chapel was built in the midst,",3
+"682",35,"The Garden of Love","Songs of Experience",1,"Where I used to play on the green.",4
+"683",35,"The Garden of Love","Songs of Experience",2,"And the gates of this Chapel were shut,",5
+"684",35,"The Garden of Love","Songs of Experience",2,"And ‘Thou shalt not’ writ over the door;",6
+"685",35,"The Garden of Love","Songs of Experience",2,"So I turned to the Garden of Love",7
+"686",35,"The Garden of Love","Songs of Experience",2,"That so many sweet flowers bore.",8
+"687",35,"The Garden of Love","Songs of Experience",3,"And I saw it was filled with graves,",9
+"688",35,"The Garden of Love","Songs of Experience",3,"And tombstones where flowers should be;",10
+"689",35,"The Garden of Love","Songs of Experience",3,"And priests in black gowns were walking their rounds,",11
+"690",35,"The Garden of Love","Songs of Experience",3,"And binding with briars my joys and desires.",12
+"691",36,"The Little Vagabond","Songs of Experience",1,"Dear mother, dear mother, the Church is cold;",1
+"692",36,"The Little Vagabond","Songs of Experience",1,"But the Alehouse is healthy, and pleasant, and warm.",2
+"693",36,"The Little Vagabond","Songs of Experience",1,"Besides, I can tell where I am used well;",3
+"694",36,"The Little Vagabond","Songs of Experience",1,"Such usage in heaven will never do well.",4
+"695",36,"The Little Vagabond","Songs of Experience",2,"But, if at the Church they would give us some ale,",5
+"696",36,"The Little Vagabond","Songs of Experience",2,"And a pleasant fire our souls to regale,",6
+"697",36,"The Little Vagabond","Songs of Experience",2,"We’d sing and we’d pray all the livelong day,",7
+"698",36,"The Little Vagabond","Songs of Experience",2,"Nor ever once wish from the Church to stray.",8
+"699",36,"The Little Vagabond","Songs of Experience",3,"Then the Parson might preach, and drink, and sing,",9
+"700",36,"The Little Vagabond","Songs of Experience",3,"And we’d be as happy as birds in the spring;",10
+"701",36,"The Little Vagabond","Songs of Experience",3,"And modest Dame Lurch, who is always at church,",11
+"702",36,"The Little Vagabond","Songs of Experience",3,"Would not have bandy children, nor fasting, nor birch.",12
+"703",36,"The Little Vagabond","Songs of Experience",4,"And God, like a father, rejoicing to see",13
+"704",36,"The Little Vagabond","Songs of Experience",4,"His children as pleasant and happy as He,",14
+"705",36,"The Little Vagabond","Songs of Experience",4,"Would have no more quarrel with the Devil or the barrel,",15
+"706",36,"The Little Vagabond","Songs of Experience",4,"But kiss him, and give him both drink and apparel.",16
+"707",37,"London","Songs of Experience",1,"I wander through each chartered street,",1
+"708",37,"London","Songs of Experience",1,"Near where the chartered Thames does flow,",2
+"709",37,"London","Songs of Experience",1,"A mark in every face I meet,",3
+"710",37,"London","Songs of Experience",1,"Marks of weakness, marks of woe.",4
+"711",37,"London","Songs of Experience",2,"In every cry of every man,",5
+"712",37,"London","Songs of Experience",2,"In every infant’s cry of fear,",6
+"713",37,"London","Songs of Experience",2,"In every voice, in every ban,",7
+"714",37,"London","Songs of Experience",2,"The mind-forged manacles I hear:",8
+"715",37,"London","Songs of Experience",3,"How the chimney-sweeper’s cry",9
+"716",37,"London","Songs of Experience",3,"Every blackening church appals,",10
+"717",37,"London","Songs of Experience",3,"And the hapless soldier’s sigh",11
+"718",37,"London","Songs of Experience",3,"Runs in blood down palace-walls.",12
+"719",37,"London","Songs of Experience",4,"But most, through midnight streets I hear",13
+"720",37,"London","Songs of Experience",4,"How the youthful harlot’s curse",14
+"721",37,"London","Songs of Experience",4,"Blasts the new-born infant’s tear,",15
+"722",37,"London","Songs of Experience",4,"And blights with plagues the marriage hearse.",16
+"723",38,"The Human Abstract","Songs of Experience",1,"Pity would be no more",1
+"724",38,"The Human Abstract","Songs of Experience",1,"If we did not make somebody poor,",2
+"725",38,"The Human Abstract","Songs of Experience",1,"And Mercy no more could be",3
+"726",38,"The Human Abstract","Songs of Experience",1,"If all were as happy as we.",4
+"727",38,"The Human Abstract","Songs of Experience",2,"And mutual fear brings Peace,",5
+"728",38,"The Human Abstract","Songs of Experience",2,"Till the selfish loves increase;",6
+"729",38,"The Human Abstract","Songs of Experience",2,"Then Cruelty knits a snare,",7
+"730",38,"The Human Abstract","Songs of Experience",2,"And spreads his baits with care.",8
+"731",38,"The Human Abstract","Songs of Experience",3,"He sits down with holy fears,",9
+"732",38,"The Human Abstract","Songs of Experience",3,"And waters the ground with tears;",10
+"733",38,"The Human Abstract","Songs of Experience",3,"Then Humility takes its root",11
+"734",38,"The Human Abstract","Songs of Experience",3,"Underneath his foot.",12
+"735",38,"The Human Abstract","Songs of Experience",4,"Soon spreads the dismal shade",13
+"736",38,"The Human Abstract","Songs of Experience",4,"Of Mystery over his head,",14
+"737",38,"The Human Abstract","Songs of Experience",4,"And the caterpillar and fly",15
+"738",38,"The Human Abstract","Songs of Experience",4,"Feed on the Mystery.",16
+"739",38,"The Human Abstract","Songs of Experience",5,"And it bears the fruit of Deceit,",17
+"740",38,"The Human Abstract","Songs of Experience",5,"Ruddy and sweet to eat,",18
+"741",38,"The Human Abstract","Songs of Experience",5,"And the raven his nest has made",19
+"742",38,"The Human Abstract","Songs of Experience",5,"In its thickest shade.",20
+"743",38,"The Human Abstract","Songs of Experience",6,"The gods of the earth and sea",21
+"744",38,"The Human Abstract","Songs of Experience",6,"Sought through nature to find this tree,",22
+"745",38,"The Human Abstract","Songs of Experience",6,"But their search was all in vain:",23
+"746",38,"The Human Abstract","Songs of Experience",6,"There grows one in the human Brain.",24
+"747",39,"Infant Sorrow","Songs of Experience",1,"My mother groaned, my father wept:",1
+"748",39,"Infant Sorrow","Songs of Experience",1,"Into the dangerous world I leapt,",2
+"749",39,"Infant Sorrow","Songs of Experience",1,"Helpless, naked, piping loud,",3
+"750",39,"Infant Sorrow","Songs of Experience",1,"Like a fiend hid in a cloud.",4
+"751",39,"Infant Sorrow","Songs of Experience",2,"Struggling in my father’s hands,",5
+"752",39,"Infant Sorrow","Songs of Experience",2,"Striving against my swaddling bands,",6
+"753",39,"Infant Sorrow","Songs of Experience",2,"Bound and weary, I thought best",7
+"754",39,"Infant Sorrow","Songs of Experience",2,"To sulk upon my mother’s breast.",8
+"755",40,"A Poison Tree","Songs of Experience",1,"I was angry with my friend:",1
+"756",40,"A Poison Tree","Songs of Experience",1,"I told my wrath, my wrath did end.",2
+"757",40,"A Poison Tree","Songs of Experience",1,"I was angry with my foe:",3
+"758",40,"A Poison Tree","Songs of Experience",1,"I told it not, my wrath did grow.",4
+"759",40,"A Poison Tree","Songs of Experience",2,"And I watered it in fears",5
+"760",40,"A Poison Tree","Songs of Experience",2,"Night and morning with my tears,",6
+"761",40,"A Poison Tree","Songs of Experience",2,"And I sunnèd it with smiles",7
+"762",40,"A Poison Tree","Songs of Experience",2,"And with soft deceitful wiles.",8
+"763",40,"A Poison Tree","Songs of Experience",3,"And it grew both day and night,",9
+"764",40,"A Poison Tree","Songs of Experience",3,"Till it bore an apple bright,",10
+"765",40,"A Poison Tree","Songs of Experience",3,"And my foe beheld it shine,",11
+"766",40,"A Poison Tree","Songs of Experience",3,"And he knew that it was mine,—",12
+"767",40,"A Poison Tree","Songs of Experience",4,"And into my garden stole",13
+"768",40,"A Poison Tree","Songs of Experience",4,"When the night had veiled the pole;",14
+"769",40,"A Poison Tree","Songs of Experience",4,"In the morning, glad, I see",15
+"770",40,"A Poison Tree","Songs of Experience",4,"My foe outstretched beneath the tree.",16
+"771",41,"A Little Boy Lost","Songs of Experience",1,"‘Nought loves another as itself,",1
+"772",41,"A Little Boy Lost","Songs of Experience",1,"Nor venerates another so,",2
+"773",41,"A Little Boy Lost","Songs of Experience",1,"Nor is it possible to thought",3
+"774",41,"A Little Boy Lost","Songs of Experience",1,"A greater than itself to know.",4
+"775",41,"A Little Boy Lost","Songs of Experience",2,"‘And, father, how can I love you",5
+"776",41,"A Little Boy Lost","Songs of Experience",2,"Or any of my brothers more?",6
+"777",41,"A Little Boy Lost","Songs of Experience",2,"I love you like the little bird",7
+"778",41,"A Little Boy Lost","Songs of Experience",2,"That picks up crumbs around the door.’",8
+"779",41,"A Little Boy Lost","Songs of Experience",3,"The Priest sat by and heard the child;",9
+"780",41,"A Little Boy Lost","Songs of Experience",3,"In trembling zeal he seized his hair,",10
+"781",41,"A Little Boy Lost","Songs of Experience",3,"He led him by his little coat,",11
+"782",41,"A Little Boy Lost","Songs of Experience",3,"And all admired his priestly care.",12
+"783",41,"A Little Boy Lost","Songs of Experience",4,"And standing on the altar high,",13
+"784",41,"A Little Boy Lost","Songs of Experience",4,"‘Lo, what a fiend is here!’ said he:",14
+"785",41,"A Little Boy Lost","Songs of Experience",4,"‘One who sets reason up for judge",15
+"786",41,"A Little Boy Lost","Songs of Experience",4,"Of our most holy mystery.’",16
+"787",41,"A Little Boy Lost","Songs of Experience",5,"The weeping child could not be heard,",17
+"788",41,"A Little Boy Lost","Songs of Experience",5,"The weeping parents wept in vain:",18
+"789",41,"A Little Boy Lost","Songs of Experience",5,"They stripped him to his little shirt,",19
+"790",41,"A Little Boy Lost","Songs of Experience",5,"And bound him in an iron chain,",20
+"791",41,"A Little Boy Lost","Songs of Experience",6,"And burned him in a holy place",21
+"792",41,"A Little Boy Lost","Songs of Experience",6,"Where many had been burned before;",22
+"793",41,"A Little Boy Lost","Songs of Experience",6,"The weeping parents wept in vain.",23
+"794",41,"A Little Boy Lost","Songs of Experience",6,"Are such things done on Albion’s shore?",24
+"795",42,"A Little Girl Lost","Songs of Experience",1,"Children of the future age,",1
+"796",42,"A Little Girl Lost","Songs of Experience",1,"Reading this indignant page,",2
+"797",42,"A Little Girl Lost","Songs of Experience",1,"Know that in a former time",3
+"798",42,"A Little Girl Lost","Songs of Experience",1,"Love, sweet love, was thought a crime.",4
+"799",42,"A Little Girl Lost","Songs of Experience",2,"In the age of gold,",5
+"800",42,"A Little Girl Lost","Songs of Experience",2,"Free from winter’s cold,",6
+"801",42,"A Little Girl Lost","Songs of Experience",2,"Youth and maiden bright,",7
+"802",42,"A Little Girl Lost","Songs of Experience",2,"To the holy light,",8
+"803",42,"A Little Girl Lost","Songs of Experience",2,"Naked in the sunny beams delight.",9
+"804",42,"A Little Girl Lost","Songs of Experience",3,"Once a youthful pair,",10
+"805",42,"A Little Girl Lost","Songs of Experience",3,"Filled with softest care,",11
+"806",42,"A Little Girl Lost","Songs of Experience",3,"Met in garden bright",12
+"807",42,"A Little Girl Lost","Songs of Experience",3,"Where the holy light",13
+"808",42,"A Little Girl Lost","Songs of Experience",3,"Had just removed the curtains of the night.",14
+"809",42,"A Little Girl Lost","Songs of Experience",4,"There, in rising day,",15
+"810",42,"A Little Girl Lost","Songs of Experience",4,"On the grass they play;",16
+"811",42,"A Little Girl Lost","Songs of Experience",4,"Parents were afar,",17
+"812",42,"A Little Girl Lost","Songs of Experience",4,"Strangers came not near,",18
+"813",42,"A Little Girl Lost","Songs of Experience",4,"And the maiden soon forgot her fear.",19
+"814",42,"A Little Girl Lost","Songs of Experience",5,"Tired with kisses sweet,",20
+"815",42,"A Little Girl Lost","Songs of Experience",5,"They agree to meet",21
+"816",42,"A Little Girl Lost","Songs of Experience",5,"When the silent sleep",22
+"817",42,"A Little Girl Lost","Songs of Experience",5,"Waves o’er heaven’s deep,",23
+"818",42,"A Little Girl Lost","Songs of Experience",5,"And the weary tired wanderers weep.",24
+"819",42,"A Little Girl Lost","Songs of Experience",6,"To her father white",25
+"820",42,"A Little Girl Lost","Songs of Experience",6,"Came the maiden bright;",26
+"821",42,"A Little Girl Lost","Songs of Experience",6,"But his loving look,",27
+"822",42,"A Little Girl Lost","Songs of Experience",6,"Like the holy book,",28
+"823",42,"A Little Girl Lost","Songs of Experience",6,"All her tender limbs with terror shook.",29
+"824",42,"A Little Girl Lost","Songs of Experience",7,"Ona, pale and weak,",30
+"825",42,"A Little Girl Lost","Songs of Experience",7,"To thy father speak!",31
+"826",42,"A Little Girl Lost","Songs of Experience",7,"O the trembling fear!",32
+"827",42,"A Little Girl Lost","Songs of Experience",7,"O the dismal care",33
+"828",42,"A Little Girl Lost","Songs of Experience",7,"That shakes the blossoms of my hoary hair!’",34
+"829",43,"A Divine Image","Songs of Experience",1,"Cruelty has a human heart,",1
+"830",43,"A Divine Image","Songs of Experience",1,"And Jealousy a human face;",2
+"831",43,"A Divine Image","Songs of Experience",1,"Terror the human form divine,",3
+"832",43,"A Divine Image","Songs of Experience",1,"And Secrecy the human dress.",4
+"833",43,"A Divine Image","Songs of Experience",2,"The human dress is forgèd iron,",5
+"834",43,"A Divine Image","Songs of Experience",2,"The human form a fiery forge,",6
+"835",43,"A Divine Image","Songs of Experience",2,"The human face a furnace sealed,",7
+"836",43,"A Divine Image","Songs of Experience",2,"The human heart its hungry gorge.",8
+"837",44,"A Cradle Song","Songs of Experience",1,"Sleep, sleep, beauty bright,",1
+"838",44,"A Cradle Song","Songs of Experience",1,"Dreaming in the joys of night;",2
+"839",44,"A Cradle Song","Songs of Experience",1,"Sleep, sleep; in thy sleep",3
+"840",44,"A Cradle Song","Songs of Experience",1,"Little sorrows sit and weep.",4
+"841",44,"A Cradle Song","Songs of Experience",2,"Sweet babe, in thy face",5
+"842",44,"A Cradle Song","Songs of Experience",2,"Soft desires I can trace,",6
+"843",44,"A Cradle Song","Songs of Experience",2,"Secret joys and secret smiles,",7
+"844",44,"A Cradle Song","Songs of Experience",2,"Little pretty infant wiles.",8
+"845",44,"A Cradle Song","Songs of Experience",3,"As thy softest limbs I feel,",9
+"846",44,"A Cradle Song","Songs of Experience",3,"Smiles as of the morning steal",10
+"847",44,"A Cradle Song","Songs of Experience",3,"O’er thy cheek, and o’er thy breast",11
+"848",44,"A Cradle Song","Songs of Experience",3,"Where thy little heart doth rest.",12
+"849",44,"A Cradle Song","Songs of Experience",4,"O the cunning wiles that creep",13
+"850",44,"A Cradle Song","Songs of Experience",4,"In thy little heart asleep!",14
+"851",44,"A Cradle Song","Songs of Experience",4,"When thy little heart doth wake,",15
+"852",44,"A Cradle Song","Songs of Experience",4,"Then the dreadful light shall break.",16
+"853",45,"To Tirzah","Songs of Experience",1,"Whate’er is born of mortal birth",1
+"854",45,"To Tirzah","Songs of Experience",1,"Must be consumèd with the earth,",2
+"855",45,"To Tirzah","Songs of Experience",1,"To rise from generation free:",3
+"856",45,"To Tirzah","Songs of Experience",1,"Then what have I to do with thee?",4
+"857",45,"To Tirzah","Songs of Experience",2,"The sexes sprung from shame and pride,",5
+"858",45,"To Tirzah","Songs of Experience",2,"Blowed in the morn, in evening died;",6
+"859",45,"To Tirzah","Songs of Experience",2,"But mercy changed death into sleep;",7
+"860",45,"To Tirzah","Songs of Experience",2,"The sexes rose to work and weep.",8
+"861",45,"To Tirzah","Songs of Experience",3,"Thou, mother of my mortal part,",9
+"862",45,"To Tirzah","Songs of Experience",3,"With cruelty didst mould my heart,",10
+"863",45,"To Tirzah","Songs of Experience",3,"And with false self-deceiving tears",11
+"864",45,"To Tirzah","Songs of Experience",3,"Didst blind my nostrils, eyes, and ears,",12
+"865",45,"To Tirzah","Songs of Experience",4,"Didst close my tongue in senseless clay,",13
+"866",45,"To Tirzah","Songs of Experience",4,"And me to mortal life betray.",14
+"867",45,"To Tirzah","Songs of Experience",4,"The death of Jesus set me free:",15
+"868",45,"To Tirzah","Songs of Experience",4,"Then what have I to do with thee?",16
+"869",46,"The Schoolboy","Songs of Experience",1,"I love to rise in a summer morn,",1
+"870",46,"The Schoolboy","Songs of Experience",1,"When the birds sing on every tree;",2
+"871",46,"The Schoolboy","Songs of Experience",1,"The distant huntsman winds his horn,",3
+"872",46,"The Schoolboy","Songs of Experience",1,"And the skylark sings with me:",4
+"873",46,"The Schoolboy","Songs of Experience",1,"O what sweet company!",5
+"874",46,"The Schoolboy","Songs of Experience",2,"But to go to school in a summer morn,—",6
+"875",46,"The Schoolboy","Songs of Experience",2,"O it drives all joy away!",7
+"876",46,"The Schoolboy","Songs of Experience",2,"Under a cruel eye outworn,",8
+"877",46,"The Schoolboy","Songs of Experience",2,"The little ones spend the day",9
+"878",46,"The Schoolboy","Songs of Experience",2,"In sighing and dismay.",10
+"879",46,"The Schoolboy","Songs of Experience",3,"Ah then at times I drooping sit,",11
+"880",46,"The Schoolboy","Songs of Experience",3,"And spend many an anxious hour;",12
+"881",46,"The Schoolboy","Songs of Experience",3,"Nor in my book can I take delight,",13
+"882",46,"The Schoolboy","Songs of Experience",3,"Nor sit in learning’s bower,",14
+"883",46,"The Schoolboy","Songs of Experience",3,"Worn through with the dreary shower.",15
+"884",46,"The Schoolboy","Songs of Experience",4,"How can the bird that is born for joy",16
+"885",46,"The Schoolboy","Songs of Experience",4,"Sit in a cage and sing?",17
+"886",46,"The Schoolboy","Songs of Experience",4,"How can a child, when fears annoy,",18
+"887",46,"The Schoolboy","Songs of Experience",4,"But droop his tender wing,",19
+"888",46,"The Schoolboy","Songs of Experience",4,"And forget his youthful spring!",20
+"889",46,"The Schoolboy","Songs of Experience",5,"O father and mother if buds are nipped,",21
+"890",46,"The Schoolboy","Songs of Experience",5,"And blossoms blown away;",22
+"891",46,"The Schoolboy","Songs of Experience",5,"And if the tender plants are stripped",23
+"892",46,"The Schoolboy","Songs of Experience",5,"Of their joy in the springing day,",24
+"893",46,"The Schoolboy","Songs of Experience",5,"By sorrow and care’s dismay,—",25
+"894",46,"The Schoolboy","Songs of Experience",6,"How shall the summer arise in joy,",26
+"895",46,"The Schoolboy","Songs of Experience",6,"Or the summer fruits appear?",27
+"896",46,"The Schoolboy","Songs of Experience",6,"Or how shall we gather what griefs destroy,",28
+"897",46,"The Schoolboy","Songs of Experience",6,"Or bless the mellowing year,",29
+"898",46,"The Schoolboy","Songs of Experience",6,"When the blasts of winter appear?",30
+"899",47,"The Voice of the Ancient Bard","Songs of Experience",1,"Youth of delight! come hither",1
+"900",47,"The Voice of the Ancient Bard","Songs of Experience",1,"And see the opening morn,",2
+"901",47,"The Voice of the Ancient Bard","Songs of Experience",1,"Image of Truth new-born.",3
+"902",47,"The Voice of the Ancient Bard","Songs of Experience",1,"Doubt is fled, and clouds of reason,",4
+"903",47,"The Voice of the Ancient Bard","Songs of Experience",1,"Dark disputes and artful teazing.",5
+"904",47,"The Voice of the Ancient Bard","Songs of Experience",1,"Folly is an endless maze;",6
+"905",47,"The Voice of the Ancient Bard","Songs of Experience",1,"Tangled roots perplex her ways;",7
+"906",47,"The Voice of the Ancient Bard","Songs of Experience",1,"How many have fallen there!",8
+"907",47,"The Voice of the Ancient Bard","Songs of Experience",1,"They stumble all night over bones of the dead;",9
+"908",47,"The Voice of the Ancient Bard","Songs of Experience",1,"And feel—they know not what but care;",10
+"909",47,"The Voice of the Ancient Bard","Songs of Experience",1,"And wish to lead others, when they should be led.",11
